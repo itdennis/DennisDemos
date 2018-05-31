@@ -11,8 +11,11 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            DelegateDemo delegateDemo = new DelegateDemo();
-            delegateDemo.Run();
+            //DelegateDemo delegateDemo = new DelegateDemo();
+            //delegateDemo.Run();
+
+            ReflectDemo reflectDemo = new ReflectDemo();
+            reflectDemo.Run();
         }
     }
 }

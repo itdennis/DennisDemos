@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DemosHelper\Person.cs" />
+    <Compile Include="Demos\DelegateDemo.cs" />
+    <Compile Include="Demos\ReflectDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
