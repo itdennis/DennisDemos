@@ -51,6 +51,27 @@ namespace DennisDemos.Demos
             lambdaPerson.eating();
             Console.ReadLine();
         }
+
+        public void RunForFunc()
+        {
+            FuncTest(ConsoleDisplayOK, ConsoleDisplayFailed);
+        }
+
+        public void FuncTest(Action success, Action Fail)
+        {
+            if (true)
+            {
+                success();
+            }
+        }
+        public void ConsoleDisplayOK()
+        {
+            Console.WriteLine("ok.");
+        }
+        public void ConsoleDisplayFailed ()
+        {
+            Console.WriteLine("error.");
+        }
         static void chineseEat(Person p)
         {
             Console.WriteLine("我是{0},我今年{1}岁了,我吃馒头", p.Name, p.Age);
