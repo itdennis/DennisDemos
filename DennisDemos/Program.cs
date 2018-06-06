@@ -13,10 +13,18 @@ namespace DennisDemos
         {
             DelegateDemo delegateDemo = new DelegateDemo();
             //delegateDemo.Run();
-            delegateDemo.RunForFunc();
+
+            //APMDemo test = new APMDemo();
+            //test.testAwait1();
 
             //ReflectDemo reflectDemo = new ReflectDemo();
             //reflectDemo.Run();
+
+            //AsyncDemo test = new AsyncDemo();
+            //test.Run();
+
+            CancellationTokenDemo ctTest = new CancellationTokenDemo();
+            ctTest.Run();
             Console.ReadKey();
         }
     }
