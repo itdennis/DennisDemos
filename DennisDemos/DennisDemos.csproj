@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DemosHelper\Person.cs" />
+    <Compile Include="DemosHelper\Product.cs" />
     <Compile Include="Demos\APMDemo.cs" />
     <Compile Include="Demos\AsyncDemo.cs" />
     <Compile Include="Demos\CancellationTokenDemo.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Demos\IOCDemos\ISqlHelper.cs" />
     <Compile Include="Demos\IOCDemos\UI.cs" />
     <Compile Include="Demos\LambdaDemo.cs" />
+    <Compile Include="Demos\NullAbleDemo.cs" />
     <Compile Include="Demos\ReflectDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

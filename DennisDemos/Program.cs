@@ -23,8 +23,14 @@ namespace DennisDemos
             //AsyncDemo test = new AsyncDemo();
             //test.Run();
 
-            CancellationTokenDemo ctTest = new CancellationTokenDemo();
-            ctTest.Run();
+            //LambdaDemo ld = new LambdaDemo();
+            //ld.Run();
+
+            NullAbleDemo na = new NullAbleDemo();
+            na.Run();
+
+            //CancellationTokenDemo ctTest = new CancellationTokenDemo();
+            //ctTest.Run();
             Console.ReadKey();
         }
     }
