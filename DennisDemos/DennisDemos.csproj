@@ -52,6 +52,7 @@
     <Compile Include="Demos\AsyncDemo.cs" />
     <Compile Include="Demos\CancellationTokenDemo.cs" />
     <Compile Include="Demos\DelegateDemo.cs" />
+    <Compile Include="Demos\GenericityDemo.cs" />
     <Compile Include="Demos\IOCDemos\BLL_AddStudent.cs" />
     <Compile Include="Demos\IOCDemos\DALMSSqlHelper.cs" />
     <Compile Include="Demos\IOCDemos\DALOracleHelper.cs" />
