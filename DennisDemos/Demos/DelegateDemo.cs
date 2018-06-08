@@ -76,5 +76,26 @@ namespace DennisDemos.Demos
         {
             Console.WriteLine("我是{0},我今年{1}岁了,我吃馒头", p.Name, p.Age);
         }
+
+        Action<String> printReverse =  (string text) =>
+        {
+            char[] chars = text.ToCharArray();
+            Array.Reverse(chars);
+            Console.WriteLine(new string(chars));
+        };
+        static Predicate<int> is666 = (int x) => { return x == 666; };
+
+        static void TestNiMing()
+        {
+            //printReverse("hello world");
+            List<int> x = new List<int>();
+            x.Add(1);
+            x.Add(2);
+            x.Add(3);
+            x.Add(4);
+            x.ForEach( (xx) => { Console.WriteLine(xx); });
+            bool a = is666(6666);
+        }
+
     }
 }
