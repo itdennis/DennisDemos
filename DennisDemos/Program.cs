@@ -13,6 +13,7 @@ namespace DennisDemos
         {
             DelegateDemo delegateDemo = new DelegateDemo();
             //delegateDemo.Run();
+            delegateDemo.Run2();
 
             //APMDemo test = new APMDemo();
             //test.testAwait1();
@@ -31,6 +32,10 @@ namespace DennisDemos
 
             //CancellationTokenDemo ctTest = new CancellationTokenDemo();
             //ctTest.Run();
+            //YieldDemo ydDemo = new YieldDemo();
+            //ydDemo.Run();
+
+
             Console.ReadKey();
         }
     }

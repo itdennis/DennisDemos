@@ -87,6 +87,8 @@ namespace DennisDemos.Demos
 
         static void TestNiMing()
         {
+            Func<string, int> returnLength;
+            returnLength = text => text.Length;
             //printReverse("hello world");
             List<int> x = new List<int>();
             x.Add(1);
@@ -96,6 +98,38 @@ namespace DennisDemos.Demos
             x.ForEach( (xx) => { Console.WriteLine(xx); });
             bool a = is666(6666);
         }
+        public void Run2()
+        {
+            TestLambdaForFANXING();
+            WriteResult(delegate () {
+                if (DateTime.Now.Hour <12)
+                {
+                    return 10;
+                }
+                else
+                {
+                    return new Object();
+                }
+            });
+        }
+        
+        static void TestLambdaForFANXING()
+        {
+            Converter<string, int> converter;
+            converter = delegate (string s) { return s.Length; };
+            PrintConvertedValue("Hellooo", converter);
 
+            PrintConvertedValue("hello", x=>x.Length);
+        }
+        
+        static void PrintConvertedValue<TInput, TOutput>(TInput input, Converter<TInput, TOutput> converter)
+        {
+            Console.WriteLine(converter(input));
+        }
+        delegate T MyFunc<T>();
+        static void WriteResult<T>(MyFunc<T> function)
+        {
+            Console.WriteLine(function());
+        }
     }
 }
