@@ -125,5 +125,11 @@ namespace DennisDemos.Demos
         {
             Console.WriteLine(function());
         }
+        
+        static void TestFunc(int a, int b)
+        {
+            Func<int, int, string> testFunc = (x, y) => { return (x + y).ToString(); };
+            var result = testFunc(a, b);
+        }
     }
 }

@@ -16,20 +16,21 @@ namespace DennisDemos
             //DelegateDemo delegateDemo = new DelegateDemo();
             ////delegateDemo.Run();
             //delegateDemo.Run2();
-            WebRequest request = WebRequest.Create("http://www.baidu.com");
-            using (WebResponse response = request.GetResponse())
-            using (Stream responseStream = response.GetResponseStream())
-            using (FileStream output = File.Create("response.dat"))
-            {
-                responseStream.CopyTo(output);
-            }
+            //WebRequest request = WebRequest.Create("http://www.baidu.com");
+            //using (WebResponse response = request.GetResponse())
+            //using (Stream responseStream = response.GetResponseStream())
+            //using (FileStream output = File.Create("response.dat"))
+            //{
+            //    responseStream.CopyTo(output);
+            //}
+             
+            LinqDemo linqDemo = new LinqDemo();
+            linqDemo.Run();
 
 
 
 
-
-
-                Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }

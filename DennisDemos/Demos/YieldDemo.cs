@@ -28,7 +28,7 @@ namespace DennisDemos.Demos
         }
         public IEnumerable<string> ReadLines(string fileName, Encoding encoding)
         {
-            return ReadLines(delegate { return File.OpenText(fileName); }
+            return ReadLines(() => { return File.OpenText(fileName); }
                 );
         }
         public IEnumerable<string> ReadLines(Func<TextReader> provider)
