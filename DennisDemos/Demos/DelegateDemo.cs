@@ -51,12 +51,10 @@ namespace DennisDemos.Demos
             lambdaPerson.eating();
             Console.ReadLine();
         }
-
         public void RunForFunc()
         {
             FuncTest(ConsoleDisplayOK, ConsoleDisplayFailed);
         }
-
         public void FuncTest(Action success, Action Fail)
         {
             if (true)
@@ -76,7 +74,6 @@ namespace DennisDemos.Demos
         {
             Console.WriteLine("我是{0},我今年{1}岁了,我吃馒头", p.Name, p.Age);
         }
-
         Action<String> printReverse =  (string text) =>
         {
             char[] chars = text.ToCharArray();
@@ -84,7 +81,6 @@ namespace DennisDemos.Demos
             Console.WriteLine(new string(chars));
         };
         static Predicate<int> is666 = (int x) => { return x == 666; };
-
         static void TestNiMing()
         {
             Func<string, int> returnLength;
@@ -112,7 +108,6 @@ namespace DennisDemos.Demos
                 }
             });
         }
-        
         static void TestLambdaForFANXING()
         {
             Converter<string, int> converter;
@@ -121,7 +116,6 @@ namespace DennisDemos.Demos
 
             PrintConvertedValue("hello", x=>x.Length);
         }
-        
         static void PrintConvertedValue<TInput, TOutput>(TInput input, Converter<TInput, TOutput> converter)
         {
             Console.WriteLine(converter(input));

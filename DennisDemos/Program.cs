@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DennisDemos.Demos;
+using System.Net;
+using System.IO;
 
 namespace DennisDemos
 {
@@ -11,32 +13,23 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            DelegateDemo delegateDemo = new DelegateDemo();
-            //delegateDemo.Run();
-            delegateDemo.Run2();
-
-            //APMDemo test = new APMDemo();
-            //test.testAwait1();
-
-            //ReflectDemo reflectDemo = new ReflectDemo();
-            //reflectDemo.Run();
-
-            //AsyncDemo test = new AsyncDemo();
-            //test.Run();
-
-            //LambdaDemo ld = new LambdaDemo();
-            //ld.Run();
-
-            //NullityDemo na = new NullityDemo();
-            //na.Run();
-
-            //CancellationTokenDemo ctTest = new CancellationTokenDemo();
-            //ctTest.Run();
-            //YieldDemo ydDemo = new YieldDemo();
-            //ydDemo.Run();
+            //DelegateDemo delegateDemo = new DelegateDemo();
+            ////delegateDemo.Run();
+            //delegateDemo.Run2();
+            WebRequest request = WebRequest.Create("http://www.baidu.com");
+            using (WebResponse response = request.GetResponse())
+            using (Stream responseStream = response.GetResponseStream())
+            using (FileStream output = File.Create("response.dat"))
+            {
+                responseStream.CopyTo(output);
+            }
 
 
-            Console.ReadKey();
+
+
+
+
+                Console.ReadKey();
         }
     }
 }
