@@ -23,9 +23,8 @@ namespace DennisDemos
             //{
             //    responseStream.CopyTo(output);
             //}
-             
-            LinqDemo linqDemo = new LinqDemo();
-            linqDemo.Run();
+
+            new ThreadDemo().Run();
 
 
 

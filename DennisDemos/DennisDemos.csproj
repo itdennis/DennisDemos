@@ -64,6 +64,7 @@
     <Compile Include="Demos\NullityDemo.cs" />
     <Compile Include="Demos\ReflectDemo.cs" />
     <Compile Include="Demos\StreamUtil.cs" />
+    <Compile Include="Demos\ThreadDemo.cs" />
     <Compile Include="Demos\YieldDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
