@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DemosHelper\Person.cs" />
     <Compile Include="DemosHelper\Product.cs" />
+    <Compile Include="Demos\AnonymousDemo.cs" />
     <Compile Include="Demos\APMDemo.cs" />
     <Compile Include="Demos\AsyncDemo.cs" />
     <Compile Include="Demos\CancellationTokenDemo.cs" />

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DennisDemos.Demos;
 using System.Net;
 using System.IO;
+using AnonymousDemo = DennisDemos.Demos.AnonymousDemo;
 
 namespace DennisDemos
 {
@@ -24,9 +25,10 @@ namespace DennisDemos
             //    responseStream.CopyTo(output);
             //}
 
-            new ThreadDemo().Run();
+            //new ThreadDemo().Run();
 
-
+            AnonymousDemo ad = new AnonymousDemo();
+            ad.EnclosingTest();
 
 
             Console.ReadKey();
