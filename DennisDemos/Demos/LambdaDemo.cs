@@ -26,6 +26,9 @@ namespace DennisDemos.Demos
             Console.WriteLine(o.Length);
 
 
+            Func<string, int> returnLength = x => x.Length;
+
+            Console.WriteLine(returnLength);
         }
     }
 }
