@@ -24,7 +24,7 @@ namespace DennisDemos
             //    responseStream.CopyTo(output);
             //}
 
-            new ThreadDemo().Run();
+            new ManualResetEventDemo().Run();
 
 
 
