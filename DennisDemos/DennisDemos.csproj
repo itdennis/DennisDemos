@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="DemosHelper\Person.cs" />
     <Compile Include="DemosHelper\Product.cs" />
-    <Compile Include="Demos\AnonymousDemo.cs" />
     <Compile Include="Demos\APMDemo.cs" />
     <Compile Include="Demos\AsyncDemo.cs" />
     <Compile Include="Demos\CancellationTokenDemo.cs" />
@@ -68,6 +67,7 @@
     <Compile Include="Demos\StreamUtil.cs" />
     <Compile Include="Demos\ThreadDemo.cs" />
     <Compile Include="Demos\YieldDemo.cs" />
+    <Compile Include="Demos\GenericDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

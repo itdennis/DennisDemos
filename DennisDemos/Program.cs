@@ -24,8 +24,9 @@ namespace DennisDemos
             //    responseStream.CopyTo(output);
             //}
 
-            new ManualResetEventDemo().Run();
-
+            //new ManualResetEventDemo().Run();
+            GenericDemo genericDemo = new GenericDemo();
+            genericDemo.Run();
 
 
 
