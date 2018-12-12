@@ -46,34 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemosHelper\Person.cs" />
-    <Compile Include="DemosHelper\Product.cs" />
-    <Compile Include="Demos\APMDemo.cs" />
-    <Compile Include="Demos\AsyncDemo.cs" />
-    <Compile Include="Demos\CancellationTokenDemo.cs" />
-    <Compile Include="Demos\DelegateDemo.cs" />
-    <Compile Include="Demos\GenerateTestFileDemo.cs" />
-    <Compile Include="Demos\GenericityDemo.cs" />
-    <Compile Include="Demos\IOCDemos\BLL_AddStudent.cs" />
-    <Compile Include="Demos\IOCDemos\DALMSSqlHelper.cs" />
-    <Compile Include="Demos\IOCDemos\DALOracleHelper.cs" />
-    <Compile Include="Demos\IOCDemos\ISqlHelper.cs" />
-    <Compile Include="Demos\IOCDemos\UI.cs" />
-    <Compile Include="Demos\LambdaDemo.cs" />
-    <Compile Include="Demos\LinqDemo.cs" />
-    <Compile Include="Demos\ManualResetEventDemo.cs" />
-    <Compile Include="Demos\NullityDemo.cs" />
-    <Compile Include="Demos\ReflectDemo.cs" />
-    <Compile Include="Demos\StreamUtil.cs" />
-    <Compile Include="Demos\ThreadDemo.cs" />
-    <Compile Include="Demos\YieldDemo.cs" />
-    <Compile Include="Demos\GenericDemo.cs" />
+    <Compile Include="DemoesHelper\Person.cs" />
+    <Compile Include="DemoesHelper\Product.cs" />
+    <Compile Include="Demoes\APMDemo.cs" />
+    <Compile Include="Demoes\AsyncDemo.cs" />
+    <Compile Include="Demoes\CancellationTokenDemo.cs" />
+    <Compile Include="Demoes\DelegateDemo.cs" />
+    <Compile Include="Demoes\GenerateTestFileDemo.cs" />
+    <Compile Include="Demoes\GenericityDemo.cs" />
+    <Compile Include="Demoes\IOCDemos\BLL_AddStudent.cs" />
+    <Compile Include="Demoes\IOCDemos\DALMSSqlHelper.cs" />
+    <Compile Include="Demoes\IOCDemos\DALOracleHelper.cs" />
+    <Compile Include="Demoes\IOCDemos\ISqlHelper.cs" />
+    <Compile Include="Demoes\IOCDemos\UI.cs" />
+    <Compile Include="Demoes\LambdaDemo.cs" />
+    <Compile Include="Demoes\LinqDemo.cs" />
+    <Compile Include="Demoes\ManualResetEventDemo.cs" />
+    <Compile Include="Demoes\NullityDemo.cs" />
+    <Compile Include="Demoes\ReflectDemo.cs" />
+    <Compile Include="Demoes\StreamUtil.cs" />
+    <Compile Include="Demoes\ThreadDemo.cs" />
+    <Compile Include="Demoes\YieldDemo.cs" />
+    <Compile Include="Demoes\GenericDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\CodeConvertor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Multi Validation Tutorial.md" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FrontEndDemoes\VueDemo.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
