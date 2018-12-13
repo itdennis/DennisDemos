@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DennisDemos", "DennisDemos\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDemo", "DapperDemo\DapperDemo.csproj", "{0D4D8FEB-1C4F-4142-80D3-1550664F3CA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataWebAPIDemo", "OdataWebAPIDemo\OdataWebAPIDemo.csproj", "{17A2D901-8416-4B82-9286-699261F8CB8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemosUT", "DemosUT\DemosUT.csproj", "{019BA23C-EADA-4300-9CE1-B50D339D97C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0D4D8FEB-1C4F-4142-80D3-1550664F3CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D4D8FEB-1C4F-4142-80D3-1550664F3CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D4D8FEB-1C4F-4142-80D3-1550664F3CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A2D901-8416-4B82-9286-699261F8CB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A2D901-8416-4B82-9286-699261F8CB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A2D901-8416-4B82-9286-699261F8CB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A2D901-8416-4B82-9286-699261F8CB8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019BA23C-EADA-4300-9CE1-B50D339D97C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019BA23C-EADA-4300-9CE1-B50D339D97C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019BA23C-EADA-4300-9CE1-B50D339D97C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019BA23C-EADA-4300-9CE1-B50D339D97C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
