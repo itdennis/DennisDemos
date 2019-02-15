@@ -52,6 +52,7 @@
     <Compile Include="Demoes\AsyncDemo.cs" />
     <Compile Include="Demoes\CancellationTokenDemo.cs" />
     <Compile Include="Demoes\DelegateDemo.cs" />
+    <Compile Include="Demoes\Father.cs" />
     <Compile Include="Demoes\GenerateTestFileDemo.cs" />
     <Compile Include="Demoes\GenericityDemo.cs" />
     <Compile Include="Demoes\IOCDemos\BLL_AddStudent.cs" />
@@ -64,6 +65,8 @@
     <Compile Include="Demoes\ManualResetEventDemo.cs" />
     <Compile Include="Demoes\NullityDemo.cs" />
     <Compile Include="Demoes\ReflectDemo.cs" />
+    <Compile Include="Demoes\RegexDemo.cs" />
+    <Compile Include="Demoes\Son.cs" />
     <Compile Include="Demoes\StreamUtil.cs" />
     <Compile Include="Demoes\ThreadDemo.cs" />
     <Compile Include="Demoes\YieldDemo.cs" />

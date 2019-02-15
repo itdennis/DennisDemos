@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DennisDemos.Demos;
 using System.Net;
 using System.IO;
+using DennisDemos.Demoes;
 using DennisDemos.Utils;
 
 namespace DennisDemos
@@ -14,19 +15,12 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("plz input a code to excute......"); //string.Format(\"Current time is: {0}\", DateTime.Now)
-            string customerInput =  Console.ReadLine();
-            var inputBeforeConvert = customerInput;
-            var inputAfterConvert = CodeConvertor.Convertor(customerInput);
+            Father ff = new Son();
 
 
-
-
-
-            GenericDemo genericDemo = new GenericDemo();
-            genericDemo.Run();
-
-
+            
+            RegexDemo rd = new RegexDemo();
+            rd.Run();
 
             Console.ReadKey();
         }
