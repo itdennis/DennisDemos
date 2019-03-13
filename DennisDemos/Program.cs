@@ -18,9 +18,16 @@ namespace DennisDemos
             Father ff = new Son();
 
 
-            
-            RegexDemo rd = new RegexDemo();
-            rd.Run();
+            DemoBase runer;
+
+
+            //runer = new RegexDemo();
+
+            //runer = new TrimDemo();
+
+            runer = new JSONDemo();
+
+            runer.Run();
 
             Console.ReadKey();
         }

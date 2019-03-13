@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -52,6 +55,7 @@
     <Compile Include="Demoes\AsyncDemo.cs" />
     <Compile Include="Demoes\CancellationTokenDemo.cs" />
     <Compile Include="Demoes\DelegateDemo.cs" />
+    <Compile Include="Demoes\DemoBase.cs" />
     <Compile Include="Demoes\Father.cs" />
     <Compile Include="Demoes\GenerateTestFileDemo.cs" />
     <Compile Include="Demoes\GenericityDemo.cs" />
@@ -60,6 +64,7 @@
     <Compile Include="Demoes\IOCDemos\DALOracleHelper.cs" />
     <Compile Include="Demoes\IOCDemos\ISqlHelper.cs" />
     <Compile Include="Demoes\IOCDemos\UI.cs" />
+    <Compile Include="Demoes\JSONDemo.cs" />
     <Compile Include="Demoes\LambdaDemo.cs" />
     <Compile Include="Demoes\LinqDemo.cs" />
     <Compile Include="Demoes\ManualResetEventDemo.cs" />
@@ -69,6 +74,7 @@
     <Compile Include="Demoes\Son.cs" />
     <Compile Include="Demoes\StreamUtil.cs" />
     <Compile Include="Demoes\ThreadDemo.cs" />
+    <Compile Include="Demoes\TrimDemo.cs" />
     <Compile Include="Demoes\YieldDemo.cs" />
     <Compile Include="Demoes\GenericDemo.cs" />
     <Compile Include="Program.cs" />
