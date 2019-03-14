@@ -25,7 +25,9 @@ namespace DennisDemos
 
             //runer = new TrimDemo();
 
-            runer = new JSONDemo();
+            //runer = new JSONDemo();
+
+            runer = new OtherDemo();
 
             runer.Run();
 

@@ -69,6 +69,7 @@
     <Compile Include="Demoes\LinqDemo.cs" />
     <Compile Include="Demoes\ManualResetEventDemo.cs" />
     <Compile Include="Demoes\NullityDemo.cs" />
+    <Compile Include="Demoes\OtherDemo.cs" />
     <Compile Include="Demoes\ReflectDemo.cs" />
     <Compile Include="Demoes\RegexDemo.cs" />
     <Compile Include="Demoes\Son.cs" />
