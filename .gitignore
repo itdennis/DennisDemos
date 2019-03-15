@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages/Newtonsoft.Json.12.0.1
+/.vs/DennisDemos/config
+/DemosUT/bin/Debug
+/DemosUT/obj/Debug
+/.vs/DennisDemos/v16/Server/sqlite3
+/.vs/DennisDemos/v16/.suo
+/.vs/DennisDemos/v15
+/DapperDemo/obj/Debug
+/DennisDemos/bin/Debug
+/DennisDemos/obj
+/OdataWebAPIDemo/bin
+/OdataWebAPIDemo/obj/Debug
