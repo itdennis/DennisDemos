@@ -93,6 +93,8 @@
     <Content Include="FrontEndDemoes\BSTableDemo.html" />
     <Content Include="FrontEndDemoes\bstabledemo2.html" />
     <Content Include="FrontEndDemoes\DropDownListDemo.html" />
+    <Content Include="FrontEndDemoes\script\sorttable.js" />
+    <Content Include="FrontEndDemoes\test.html" />
     <Content Include="FrontEndDemoes\VueDemo.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

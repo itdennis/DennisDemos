@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sort table example</title>
+    <style>
+        body {
+            font-size: 14px;
+            margin: 50px 30px;
+        }
+
+        table {
+            border: 2px solid #42b983;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        th {
+            background-color: #42b983;
+            color: rgba(255,255,255,0.66);
+            cursor: pointer;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        th, td {
+            min-width: 90px;
+            padding: 10px 10px;
+        }
+
+        .arrow {
+            display: inline-block;
+            vertical-align: middle;
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            opacity: 0.66;
+        }
+
+            .arrow.asc {
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-bottom: 4px solid #fff;
+            }
+
+            .arrow.dsc {
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 4px solid #fff;
+            }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name<span class="arrow asc"></span></th>
+                <th>Score<span class="arrow dsc"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Li Lei
+                </td>
+                <td>
+                    100
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Han Meimei
+                </td>
+                <td>
+                    99
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+---------------------
+作者：门关
+来源：CSDN
+原文：https://blog.csdn.net/dengsi19361/article/details/70313132
+版权声明：本文为博主原创文章，转载请附上博文链接！

@@ -6,19 +6,26 @@
     <title>hello BS table!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <style>
-    .table td.fit,
-    .table th.fit {
-        white-space: nowrap;
-        width: 1%;
-    }
-
-  </style>
+        .table td.fit,
+        .table th.fit {
+            white-space: nowrap;
+            width: 1%;
+        }
+        /* Sortable tables */
+        table.sortable thead {
+            background-color: #eee;
+            color: #666666;
+            font-weight: bold;
+            cursor: default;
+        }
+    </style>
+    <script src="./script/sorttable.js"></script>
 </head>
 
 <body>
     <div class="container mt-5">
         <!-- First table without widths classes -->
-        <table class="table table-striped text-white">
+        <table class="table table-striped text-white sortable">
             <thead>
                 <tr>
                     <th>Index</th>
@@ -34,21 +41,45 @@
                     <th title="PLAWoodblocksLegoFeaturesFromAdsFedP">PLAWoodblocks LegoFeatures From AdsFedP</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>49959</td>
-                    <td>|tejasgo|akjohri|risingl|nehagar|</td>
-                    <td>reserve for Skype For Life (S4L) Ads -Non US market - traffic group 671, line AdsFLN0.</td>
-                    <td></td>
-                    <td>RC2!en-us!2017!MarchCombo!NoFT!AIA.ini.</td>
-                    <td>RC2!en-us!QKv4!Travel!Home!PDL!NoCustBlocker.ini.</td>
-                    <td></td>
-                    <td>record</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
+            <tr>
+                <td>1</td>
+                <td>49959</td>
+                <td>|tejasgo|akjohri|risingl|nehagar|</td>
+                <td>reserve for Skype For Life (S4L) Ads -Non US market - traffic group 671, line AdsFLN0.</td>
+                <td></td>
+                <td>RC2!en-us!2017!MarchCombo!NoFT!AIA.ini.</td>
+                <td>RC2!en-us!QKv4!Travel!Home!PDL!NoCustBlocker.ini.</td>
+                <td></td>
+                <td>record</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>49960</td>
+                <td>|tejasgo|akjohri|risingl|nehagar|</td>
+                <td>reserve for Skype For Life (S4L) Ads -Non US market - traffic group 671, line AdsFLN0.</td>
+                <td></td>
+                <td>RC2!en-us!2017!MarchCombo!NoFT!AIA.ini.</td>
+                <td>RC2!en-us!QKv4!Travel!Home!PDL!NoCustBlocker.ini.</td>
+                <td></td>
+                <td>record</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>49961</td>
+                <td>|tejasgo|akjohri|risingl|nehagar|</td>
+                <td>reserve for Skype For Life (S4L) Ads -Non US market - traffic group 671, line AdsFLN0.</td>
+                <td></td>
+                <td>RC2!en-us!2017!MarchCombo!NoFT!AIA.ini.</td>
+                <td>RC2!en-us!QKv4!Travel!Home!PDL!NoCustBlocker.ini.</td>
+                <td></td>
+                <td>record</td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
         <!-- End first table -->
     </div>
