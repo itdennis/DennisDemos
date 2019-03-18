@@ -15,3 +15,14 @@
 /OdataWebAPIDemo/bin
 /OdataWebAPIDemo/obj/Debug
 /.vs
+/ExtendedMethod/obj/Debug
+/IOCDemo/bin/Debug
+/IOCDemo/Extensions/Services.pdb
+/IOCDemo/Extensions/Services.dll
+/IOCDemo/Extensions/ExtendedMethod.pdb
+/IOCDemo/Extensions/ExtendedMethod.dll
+/IOCDemo/obj/Debug
+/packages/System.ComponentModel.Composition.4.5.0
+/PlayerContract/obj/Debug
+/Services/bin/Debug
+/Services/obj/Debug
