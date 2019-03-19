@@ -16,5 +16,7 @@ namespace DennisDemos.Demoes
             Console.WriteLine(s);
             Console.ReadKey();
         }
+        public void Get() { }
+        public void Get(int a) { }
     }
 }
