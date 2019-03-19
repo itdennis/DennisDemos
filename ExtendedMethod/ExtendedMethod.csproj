@@ -46,6 +46,7 @@
     <Compile Include="MySimpleCalculator.cs" />
     <Compile Include="ExtendedMethod.cs" />
     <Compile Include="Interface\IOperation.cs" />
+    <Compile Include="MySimpleCalculator2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

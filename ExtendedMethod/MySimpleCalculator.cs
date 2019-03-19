@@ -49,6 +49,19 @@ namespace ExtendedMethod
             return -1;
         }
 
+    }
+    [Export]
+    public abstract class DataTwo
+    {
+        //This part will not be discovered
+        //by the catalog.
+    }
 
+    [PartNotDiscoverable]
+    [Export]
+    public class DataThree
+    {
+        //This part will also not be discovered
+        //by the catalog.
     }
 }

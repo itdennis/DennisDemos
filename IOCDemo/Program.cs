@@ -14,7 +14,7 @@ namespace MEFDemo
         private CompositionContainer _container;
 
         [Import(typeof(ICalculatorService))]
-        public ICalculatorService calculator;
+        public ICalculatorService Calculator { get; set; }
 
         private Program()
         {
@@ -47,7 +47,7 @@ namespace MEFDemo
             while (true)
             {
                 s = Console.ReadLine();
-                Console.WriteLine(p.calculator.Calculate(s));
+                Console.WriteLine(p.Calculator.Calculate(s));
             }
         }
     }
