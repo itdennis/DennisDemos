@@ -15,6 +15,10 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
+            //ExecuteRectangle.Run();
+            SimpleDelegateUse.Run();
+
+
             Father ff = new Son();
 
 
@@ -27,7 +31,9 @@ namespace DennisDemos
 
             //runer = new JSONDemo();
 
-            runer = new OtherDemo();
+            //runer = new OtherDemo();
+
+            runer = new Converter_demo();
 
             runer.Run();
 

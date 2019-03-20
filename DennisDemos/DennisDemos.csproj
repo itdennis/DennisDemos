@@ -54,11 +54,15 @@
     <Compile Include="Demoes\APMDemo.cs" />
     <Compile Include="Demoes\AsyncDemo.cs" />
     <Compile Include="Demoes\CancellationTokenDemo.cs" />
+    <Compile Include="Demoes\Converter_demo.cs" />
+    <Compile Include="Demoes\DebugInfo.cs" />
     <Compile Include="Demoes\DelegateDemo.cs" />
+    <Compile Include="Demoes\Delegate_demo2.cs" />
     <Compile Include="Demoes\DemoBase.cs" />
     <Compile Include="Demoes\Father.cs" />
     <Compile Include="Demoes\GenerateTestFileDemo.cs" />
     <Compile Include="Demoes\GenericityDemo.cs" />
+    <Compile Include="Demoes\Indexer_demo.cs" />
     <Compile Include="Demoes\IOCDemos\BLL_AddStudent.cs" />
     <Compile Include="Demoes\IOCDemos\DALMSSqlHelper.cs" />
     <Compile Include="Demoes\IOCDemos\DALOracleHelper.cs" />
