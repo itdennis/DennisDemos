@@ -34,6 +34,7 @@ namespace DennisDemos.Demos
         static async Task MainAsync()
         {
             Task<string> task = ReadFileAsync("LogicDocument_DocAveLoadBalance.docx");   //❶ 开始异步读取
+            Task<string[]> fetchURL = FetchURLAsync(new List<string> { "www.baidu.com" });
             try
             {
                 Console.WriteLine("start to wait reads file reult.");
@@ -59,8 +60,12 @@ namespace DennisDemos.Demos
             }
         }
         #endregion
-
-        async Task<string[]> FetchURLAsync(List<string> urls)
+        /// <summary>
+        /// demo in C# in deep
+        /// </summary>
+        /// <param name="urls"></param>
+        /// <returns></returns>
+        static async Task<string[]> FetchURLAsync(List<string> urls)
         {
             // TODO：验证是否获取到了URL
             var tasks = urls.Select(async url =>
