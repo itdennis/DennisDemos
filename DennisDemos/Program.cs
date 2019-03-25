@@ -16,7 +16,7 @@ namespace DennisDemos
         static void Main(string[] args)
         {
             //ExecuteRectangle.Run();
-            SimpleDelegateUse.Run();
+            //SimpleDelegateUse.Run();
 
 
             Father ff = new Son();
@@ -33,7 +33,10 @@ namespace DennisDemos
 
             //runer = new OtherDemo();
 
-            runer = new Converter_demo();
+            //runer = new Converter_demo();
+
+            runer = new DateTimeDemo();
+
 
             runer.Run();
 
