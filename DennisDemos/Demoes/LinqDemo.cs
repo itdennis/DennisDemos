@@ -21,6 +21,27 @@ namespace DennisDemos.Demos
                     element.SquareRoot);
             }
         }
+
+        
+        public void RunCSharpInDeepDemo()
+        {
+            // Aggregate demo
+            string[] words = { "zero", "one", "two", "threee", "four" };
+            int[] numbers = { 0, 1, 2, 3, 4 };
+            numbers.Sum();
+            numbers.Count();
+            numbers.Average();
+            numbers.LongCount(x => x % 2 == 0);
+            words.Min(w => w.Length);
+            words.Max(w => w.Length);
+
+            //
+            object[] allStrings = { "There", "are", "all", "strings" };
+            object[] notAllStrings = { "Number", "at", "the", "end", "5" };
+            allStrings.Cast<string>();
+
+
+        }
         
     }
 }
