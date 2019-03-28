@@ -20,6 +20,8 @@ namespace DennisDemos.Demos
             //Console.WriteLine(result.Result);// 必须等到结果之后才能继续执行下面的代码. 所以result是同步的.
             //Console.WriteLine("test1 end");
             Console.WriteLine("MainAsync start.");
+            var resultTest = FetchURLAsync(new List<string>() { "www.baidu.com"});
+
             var result2 = MainAsync();
             
             Console.WriteLine("MainAsync end.");

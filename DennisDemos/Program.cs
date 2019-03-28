@@ -15,7 +15,7 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            Father ff = new Son();
+            //Father ff = new Son();
 
 
             DemoBase runer;
@@ -27,9 +27,11 @@ namespace DennisDemos
 
             //runer = new JSONDemo();
 
-            runer = new OtherDemo();
+            //runer = new OtherDemo();
 
-            runer.Run();
+            //runer.Run();
+            AsyncDemo asyncDemo = new AsyncDemo();
+            asyncDemo.Run();
 
             Console.ReadKey();
         }
