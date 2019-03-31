@@ -35,3 +35,14 @@
 /DapperDemo/obj/Release
 /Services/obj/Release
 /StrategyDemos/obj
+/BookingSystemBLL/bin/Debug/netcoreapp2.2
+/BookingSystemBLL/obj
+/Design_Patterns_Demos/SimpleFactory/bin/Debug/netcoreapp2.1
+/BookingSystemV2/obj
+/BookingSystemV2/bin/Debug/netcoreapp2.2
+/BookingSystemIDAL/obj
+/BookingSystemIBLL/obj
+/BookingSystemIBLL/bin/Debug/netcoreapp2.2
+/BookingSystemDAL/bin/Debug/netcoreapp2.2
+/BookingSystemIBLL/BookingSystemIBLL.csproj
+/BookingSystemDAL/obj

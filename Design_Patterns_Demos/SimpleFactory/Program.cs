@@ -1,10 +1,12 @@
-﻿using SimpleFactory.LogicLayer;
+﻿using SimpleFactory.BookingSystem;
+using SimpleFactory.LogicLayer;
 using System;
 
 namespace SimpleFactory
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine("plz input number a:");
