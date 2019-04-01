@@ -46,3 +46,12 @@
 /BookingSystemDAL/bin/Debug/netcoreapp2.2
 /BookingSystemIBLL/BookingSystemIBLL.csproj
 /BookingSystemDAL/obj
+/DennisService/obj
+/DennisService/bin/Debug/netcoreapp2.2
+/DennisInterface/obj
+/DennisInterface/bin/Debug/netcoreapp2.2
+/DennisContainer/obj
+/DennisContainer/bin/Debug/netcoreapp2.2
+/DennisTest/obj
+/DennisTest/bin/Debug/netcoreapp2.1
+/DennisService/DennisService.csproj

@@ -36,6 +36,7 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Tpl.Dataflow.4.5.24\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
@@ -62,6 +63,7 @@
     <Compile Include="Demoes\DemoBase.cs" />
     <Compile Include="Demoes\Father.cs" />
     <Compile Include="Demoes\GenerateTestFileDemo.cs" />
+    <Compile Include="Demoes\GenericCacheDemo.cs" />
     <Compile Include="Demoes\GenericityDemo.cs" />
     <Compile Include="Demoes\Indexer_demo.cs" />
     <Compile Include="Demoes\IOCDemos\BLL_AddStudent.cs" />
