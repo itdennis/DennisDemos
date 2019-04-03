@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Decorator.Component
 {
-    interface IComponent
+    public interface IComponent
     {
         void Show(string str);
     }

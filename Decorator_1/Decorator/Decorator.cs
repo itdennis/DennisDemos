@@ -5,9 +5,9 @@ using Decorator.Component;
 
 namespace Decorator.Decorator
 {
-    abstract class Decorator : IComponent
+    public abstract class Decorator : IComponent
     {
-        public Decorator(IComponent component)
+        public void decorator(IComponent component)
         {
             this.component = component;
         }

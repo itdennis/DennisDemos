@@ -7,7 +7,7 @@ namespace Decorator.Decorator
 {
     class ConcreateDecoratorA : Decorator
     {
-        public ConcreateDecoratorA(IComponent component) : base(component) { }
+        //public ConcreateDecoratorA(IComponent component) : base(component) { }
         public string AddState(string str)
         {
             return $"this is a decorated str :{str}.";
