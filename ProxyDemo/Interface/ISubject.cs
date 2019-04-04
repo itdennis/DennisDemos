@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProxyDemo.Interface
 {
-    public interface Subject
+    public interface ISubject
     {
         void Visit();
     }

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ProxyDemo.Proxy
 {
-    public class ProxySubject : Subject
+    public class ProxySubject : ISubject
     {
-        private Subject subject;
+        private ISubject subject;
 
-        public ProxySubject(Subject subject)
+        public ProxySubject(ISubject subject)
         {
             this.subject = subject;
         }
