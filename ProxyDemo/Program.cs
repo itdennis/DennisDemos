@@ -1,12 +1,15 @@
-﻿using System;
+﻿using ProxyDemo.Proxy;
+using ProxyDemo.Target;
+using System;
 
 namespace ProxyDemo
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void main(String[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProxySubject subject = new ProxySubject(new RealSubject());
+            subject.Visit();
         }
     }
 }
