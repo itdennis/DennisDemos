@@ -15,27 +15,17 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
+            DemoBase runer;
             //ExecuteRectangle.Run();
             //SimpleDelegateUse.Run();
-
-
-            Father ff = new Son();
-
-
-            DemoBase runer;
-
-
+            //Father ff = new Son();
             //runer = new RegexDemo();
-
             //runer = new TrimDemo();
-
             //runer = new JSONDemo();
-
             //runer = new OtherDemo();
-
             //runer = new Converter_demo();
-
-            runer = new DateTimeDemo();
+            //runer = new DateTimeDemo();
+            runer = new DelegateDemo3();
 
 
             runer.Run();

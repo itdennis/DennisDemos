@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DennisDemos.Demoes
 {
-    abstract class DemoBase
+    public abstract class DemoBase
     {
         public abstract void Run();
     }
