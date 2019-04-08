@@ -36,8 +36,8 @@ namespace DennisDemos.Demoes
             Person tom = new Person("Tom");
             StringProcesser jonVoice, tomVoice, background;
             jonVoice = new StringProcesser(jon.Say);
-            tomVoice = new StringProcesser(tom.Say);
-            background = new StringProcesser(Background.Note);
+            tomVoice = new StringProcesser(delegate (string s1) { Console.WriteLine(s1); });
+            background = (s2) => Console.WriteLine(s2);
             jonVoice("Helllo son.");
             tomVoice.Invoke("Hello Daddy.");
             background("some thing flys.");
