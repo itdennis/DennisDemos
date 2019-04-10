@@ -67,3 +67,6 @@
 /TemplateMethod/bin/Debug/netcoreapp2.1
 /TemplateMethod/obj
 /BuilderDemo/obj
+/AbstractFactoryDemo/obj
+/PublishSubscriptDemo/obj
+/PublishSubscriptDemo/bin/Debug/netcoreapp3.0
