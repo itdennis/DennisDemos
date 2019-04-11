@@ -1,5 +1,4 @@
-﻿using SimpleFactory.BookingSystem;
-using SimpleFactory.LogicLayer;
+﻿using SimpleFactory.LogicLayer;
 using System;
 
 namespace SimpleFactory

@@ -2,7 +2,20 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>obj\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookingSystemBLL\BookingSystemBLL.csproj" />
+    <ProjectReference Include="..\BookingSystemDAL\BookingSystemDAL.csproj" />
+    <ProjectReference Include="..\BookingSystemIBLL_New\BookingSystemIBLL_New.csproj" />
+    <ProjectReference Include="..\BookingSystemIDAL\BookingSystemIDAL.csproj" />
+    <ProjectReference Include="..\DBSchema\DBSchema.csproj" />
+  </ItemGroup>
 
 </Project>
