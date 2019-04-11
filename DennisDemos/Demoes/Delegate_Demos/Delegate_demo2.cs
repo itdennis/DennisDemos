@@ -4,13 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DennisDemos.Demoes
+namespace DennisDemos.Demos
 {
     delegate void StringProcesser(string input);
     class Person
     {
         string name;
         public Person(string name)
+        {
+            this.name = name;
+        }
+        public Person(string name, int age)
         {
             this.name = name;
         }

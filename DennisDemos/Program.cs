@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DennisDemos.Demos;
 using System.Net;
 using System.IO;
-using DennisDemos.Demoes;
+using DennisDemos.Demos;
 using DennisDemos.Utils;
 
 namespace DennisDemos
@@ -25,7 +25,7 @@ namespace DennisDemos
             //runer = new OtherDemo();
             //runer = new Converter_demo();
             //runer = new DateTimeDemo();
-            runer = new DelegateDemo3();
+            runer = new DelegateDemo();
 
 
             runer.Run();
