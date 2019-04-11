@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DennisService
 {
+    /// <summary>
+    /// 实际注册的hotel类
+    /// </summary>
     public class GoldenHotel
     {
         public string Name { get; set; }

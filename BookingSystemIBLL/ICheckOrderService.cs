@@ -2,7 +2,8 @@
 
 namespace BookingSystemIBLL
 {
-    public interface ICheckOrderService
+    public interface IOrderOperationService
     {
+        void ConvertOrderInput2Model();
     }
 }

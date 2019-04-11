@@ -12,11 +12,16 @@ namespace DennisTest
         public void TestMethod1()
         {
             {
-                DContainer container = new DContainer();
-                container.RegisterType<IHotel, GoldenHotel>();
-                IHotel hotel = container.Reslove<IHotel>();
+                IHotel hotel = new JWHotel();
+
+            }
+
+            {
+                //DContainer container = new DContainer();
                 //container.RegisterType<IHotel, GoldenHotel>();
-                hotel.Check();
+                //IHotel hotel = container.Reslove<IHotel>();
+                ////container.RegisterType<IHotel, GoldenHotel>();
+                //hotel.Check();
             }
 
             //{

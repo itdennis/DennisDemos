@@ -3,6 +3,9 @@ using System;
 
 namespace DennisService
 {
+    /// <summary>
+    /// 实际注册的hotel类
+    /// </summary>
     public class JWHotel : IHotel
     {
         public string Name { get; set; }
