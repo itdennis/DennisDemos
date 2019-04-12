@@ -122,3 +122,7 @@
 /src/Other/Just4TestDemo/obj
 /src/Other/Services/obj
 /src/Other/Services/bin/Debug
+/BookingSystem.BLL/bin/Debug/netcoreapp3.0
+/BookingSystem.BLL/obj
+/BookingSystem.UI/bin/Debug/netcoreapp3.0
+/BookingSystem.UI/obj
