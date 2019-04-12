@@ -115,3 +115,10 @@
 /IOC/DennisService/obj
 /IOC/DennisTest/bin/Debug/netcoreapp2.1
 /IOC/DennisTest/obj
+/src/DapperDemo/bin/Debug
+/src/DapperDemo/obj
+/src/Other/ExtendedMethod/obj
+/src/Other/Just4TestDemo/bin/Debug/netcoreapp2.1
+/src/Other/Just4TestDemo/obj
+/src/Other/Services/obj
+/src/Other/Services/bin/Debug
