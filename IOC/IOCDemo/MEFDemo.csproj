@@ -55,7 +55,7 @@
     <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Services\Services.csproj">
+    <ProjectReference Include="..\..\Services\Services.csproj">
       <Project>{5d3a4bd5-2283-4376-bfc9-abffd53f324b}</Project>
       <Name>Services</Name>
     </ProjectReference>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DennisInterface\DennisInterface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DennisContainer">
+      <HintPath>..\DennisContainer\bin\Debug\netcoreapp2.2\DennisContainer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -106,3 +106,12 @@
 /IOC/IOCDemo/bin/Debug
 /IOC/IOCDemo/obj
 /DesignPatterns/StrategyDemos/bin/Debug/netcoreapp2.1
+/DesignPatterns/Decorator/bin/Debug/netcoreapp2.2
+/IOC/DennisContainer/bin/Debug/netcoreapp2.2
+/IOC/DennisContainer/obj
+/IOC/DennisInterface/bin/Debug
+/IOC/DennisInterface/obj
+/IOC/DennisService/bin/Debug/netcoreapp2.2
+/IOC/DennisService/obj
+/IOC/DennisTest/bin/Debug/netcoreapp2.1
+/IOC/DennisTest/obj
