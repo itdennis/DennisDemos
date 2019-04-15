@@ -131,3 +131,5 @@
 /BookingSystem.IOC/obj
 /BookingSystem.Run/obj
 /Dennis.Container/obj
+/StatePatterns/bin/Debug/netcoreapp3.0
+/StatePatterns/obj
