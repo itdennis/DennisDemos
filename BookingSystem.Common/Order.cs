@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BookingSystem.BLL
+namespace BookingSystem.Common
 {
     public class Order
     {

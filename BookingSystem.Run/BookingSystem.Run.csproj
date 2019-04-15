@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BookingSystem.BLL\BookingSystem.BLL.csproj" />
     <ProjectReference Include="..\BookingSystem.IOC\BookingSystem.IOC.csproj" />
+    <ProjectReference Include="..\BookingSystem.UI\BookingSystem.UI.csproj" />
   </ItemGroup>
 
 </Project>

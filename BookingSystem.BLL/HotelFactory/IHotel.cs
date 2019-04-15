@@ -7,6 +7,6 @@ namespace BookingSystem.BLL
         string Name { get; set; }
         int RommCount { get; set; }
         int LeftRoomCount { get; set; }
-        bool Check(Order order);
+        bool Check(Common.Order order);
     }
 }

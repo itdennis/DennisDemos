@@ -126,3 +126,7 @@
 /BookingSystem.BLL/obj
 /BookingSystem.UI/bin/Debug/netcoreapp3.0
 /BookingSystem.UI/obj
+/BookingSystem.Common/obj
+/BookingSystem.IOC/bin/Debug/netcoreapp3.0
+/BookingSystem.IOC/obj
+/BookingSystem.Run/obj

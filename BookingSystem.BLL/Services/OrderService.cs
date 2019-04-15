@@ -4,11 +4,11 @@ using System.Text;
 
 namespace BookingSystem.BLL
 {
-    public class OrderService
+    public class OrderService : IOC.IOrderService
     {
-        public Order OrderConverter(string orderStr)
+        public Common.Order OrderConverter(string orderStr)
         {
-            Order order = new Order
+            Common.Order order = new Common.Order
             {
 
             };
