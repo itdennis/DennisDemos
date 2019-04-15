@@ -44,5 +44,17 @@ namespace BookingSystem.UI
             }
             Console.ReadKey();
         }
+
+        public void RunWithDContainer()
+        {
+            //Dennis.Container.DContainer container = new Dennis.Container.DContainer();
+
+            //container.Register<IOC.IOrderService, BLL.OrderService>();
+            //var orderService = container.Resolve<IOC.IOrderService>();
+
+
+            //container.Register<IOC.IHotelService, BLL.HotelService>();
+            //var hotelService = container.Resolve<IOC.IHotelService>();
+        }
     }
 }

@@ -9,6 +9,7 @@
     <ProjectReference Include="..\BookingSystem.BLL\BookingSystem.BLL.csproj" />
     <ProjectReference Include="..\BookingSystem.IOC\BookingSystem.IOC.csproj" />
     <ProjectReference Include="..\BookingSystem.UI\BookingSystem.UI.csproj" />
+    <ProjectReference Include="..\Dennis.Container\Dennis.Container.csproj" />
   </ItemGroup>
 
 </Project>
