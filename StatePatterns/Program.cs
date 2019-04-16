@@ -6,13 +6,9 @@ namespace StatePatterns
     {
         static void Main(string[] args)
         {
-            State state = new ConcreateStateA();
-            Context context = new Context(state);
-            context.Request();
-            context.Request();
-            context.Request();
-            context.Request();
-            context.Request();
+            Worker worker = new Worker();
+            worker.Hour = 9;
+            worker.WriteProgram();
 
             Console.ReadKey();
         }

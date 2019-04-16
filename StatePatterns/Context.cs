@@ -4,27 +4,31 @@ using System.Text;
 
 namespace StatePatterns
 {
-    public class Context
+    public class Worker
     {
-        private State state;
-        public Context(State state)
+
+        public Worker()
         {
-            this.state = state;
+            //this.currentState = state;
         }
 
-        public State State
+        private State currentState;
+        public State State { get => this.currentState; set => currentState = value; }
+
+        private int hour;
+        public int Hour { get => this.hour; set => this.hour = value; }
+
+        private bool finished = false;
+        public bool Finished { get => this.finished; set => this.finished = value; }
+
+        public void WriteProgram()
         {
-            get => this.state;
-            set
-            {
-                state = value;
-                Console.WriteLine($"current state is {state.GetType().Name}");
-            }
+            currentState.WriteProgram(this);
         }
 
-        public void Request()
+        public void SetState(State targetState)
         {
-            state.Handel(this);
+            currentState = targetState;
         }
     }
 }
