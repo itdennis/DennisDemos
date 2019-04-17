@@ -6,7 +6,9 @@ namespace BridgeDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Abstraction abstraction = new AbstractionA();
+            abstraction.SetImplementor(new ConcreteImplementorA());
+            abstraction.Operation();
         }
     }
 }
