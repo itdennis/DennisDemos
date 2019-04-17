@@ -6,6 +6,6 @@ namespace StatePatterns
 {
     public abstract class State
     {
-        public abstract void Handel(Context context);
+        public abstract void WriteProgram(Worker context);
     }
 }

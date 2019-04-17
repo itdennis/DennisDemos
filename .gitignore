@@ -133,4 +133,11 @@
 /Dennis.Container/obj
 /StatePatterns/bin/Debug/netcoreapp3.0
 /StatePatterns/obj
+/DesignPatterns/Adapter/AdapterDemo/obj
+/DesignPatterns/Bridge/BridgeDemo/obj
+/DesignPatterns/Singleton/SingletonDemo/obj
+/DesignPatterns/StatePatterns/bin/Debug/netcoreapp3.0
+/DesignPatterns/StatePatterns/obj
+/DesignPatterns/DutyChain/DutyChainDemo/obj/Debug/netcoreapp3.0
+/DesignPatterns/DutyChain/DutyChainDemo/obj/Release/netcoreapp3.0
 /DesignPatterns/DutyChain/DutyChainDemo/obj
