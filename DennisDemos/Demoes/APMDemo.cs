@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     /// <summary>
     /// APM异步编程模型, Asynchronous Programming Model

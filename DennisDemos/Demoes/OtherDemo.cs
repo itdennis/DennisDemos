@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     class OtherDemo : DemoBase
     {

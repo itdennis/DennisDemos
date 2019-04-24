@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Reflection;
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     // 一个自定义特性 BugFix 被赋给类及其成员
     [AttributeUsage(AttributeTargets.Class |

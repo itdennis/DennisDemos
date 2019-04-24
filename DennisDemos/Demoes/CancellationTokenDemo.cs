@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     class CancellationTokenDemo
     {

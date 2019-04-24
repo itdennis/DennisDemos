@@ -10,7 +10,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Collections;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     class AsyncDemo
     {

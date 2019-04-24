@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DennisDemos.Demos.IOCDemos
+namespace DennisDemos.Demoes.IOCDemos
 {
     public class UI
     {

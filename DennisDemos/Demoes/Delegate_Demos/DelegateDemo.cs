@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using DennisDemos.DemosHelper;
+using DennisDemos.DemoesHelper;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     public delegate void EventHandler();
     public class DelegateDemo : DemoBase
