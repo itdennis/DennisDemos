@@ -56,6 +56,7 @@
     <Compile Include="Demoes\AsyncDemo.cs" />
     <Compile Include="Demoes\CancellationTokenDemo.cs" />
     <Compile Include="Demoes\Converter_demo.cs" />
+    <Compile Include="Demoes\CSVHelper.cs" />
     <Compile Include="Demoes\DateTimeDemo.cs" />
     <Compile Include="Demoes\DebugInfo.cs" />
     <Compile Include="Demoes\Delegate_Demos\DelegateDemo3.cs" />

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DennisDemos.Demos;
+using DennisDemos.Demoes;
 using System.Net;
 using System.IO;
-using DennisDemos.Demos;
+using DennisDemos.Demoes;
 using DennisDemos.Utils;
 using DennisDemos.Demoes.XiaoJuHua;
 

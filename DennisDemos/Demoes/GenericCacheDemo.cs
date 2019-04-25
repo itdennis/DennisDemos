@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     /// <summary>
     /// 使用泛型实现缓存：

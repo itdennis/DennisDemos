@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     /// <summary>
     /// 使用yield之后会对降低程序对于内存的消耗.

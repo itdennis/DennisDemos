@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DennisDemos.DemosHelper
+namespace DennisDemos.DemoesHelper
 {
     //定义了一个从System.Delegate类派生的类
     //也可以理解为一种数据类型 这种数据类型指向返回值为void 参数为Person对象的函数

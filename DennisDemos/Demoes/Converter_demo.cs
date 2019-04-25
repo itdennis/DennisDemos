@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DennisDemos.Demos
+namespace DennisDemos.Demoes
 {
     class Converter_demo : DemoBase
     {
