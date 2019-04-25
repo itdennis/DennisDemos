@@ -8,6 +8,7 @@ using System.Net;
 using System.IO;
 using DennisDemos.Demos;
 using DennisDemos.Utils;
+using DennisDemos.Demoes.XiaoJuHua;
 
 namespace DennisDemos
 {
@@ -15,7 +16,7 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            DemoBase runer;
+            //DemoBase runer;
             //ExecuteRectangle.Run();
             //SimpleDelegateUse.Run();
             //Father ff = new Son();
@@ -25,12 +26,10 @@ namespace DennisDemos
             //runer = new OtherDemo();
             //runer = new Converter_demo();
             //runer = new DateTimeDemo();
-            runer = new DelegateDemo();
-
-
-            runer.Run();
-
-            Console.ReadKey();
+            //runer = new DelegateDemo();
+            //runer.Run();
+            //Console.ReadKey();
+            
         }
     }
 }
