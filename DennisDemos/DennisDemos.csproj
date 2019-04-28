@@ -91,6 +91,7 @@
     <Compile Include="Demoes\GenericDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Demoes\SequenceEqualDemo.cs" />
     <Compile Include="Utils\Class1.cs" />
     <Compile Include="Utils\Class2.cs" />
     <Compile Include="Utils\CodeConvertor.cs" />

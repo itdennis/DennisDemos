@@ -16,7 +16,7 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            //DemoBase runer;
+            DemoBase runer;
             //ExecuteRectangle.Run();
             //SimpleDelegateUse.Run();
             //Father ff = new Son();
@@ -29,7 +29,9 @@ namespace DennisDemos
             //runer = new DelegateDemo();
             //runer.Run();
             //Console.ReadKey();
-            
+            runer = new SequenceEqualDemo();
+
+            runer.Run();
         }
     }
 }
