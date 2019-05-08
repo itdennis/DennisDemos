@@ -11,6 +11,11 @@ namespace DennisDemos.Demoes
     {
         public override void Run()
         {
+            string testParameterList = @"{
+                                            ""key"": ""value"",
+                                            'key2':'value',
+                                        }";
+
             List<Student> ls = new List<Student>();
             Student one = new Student(){ Name = "武松", y = 250 };
             Student one2 = new Student() { Name = "武松2", y = 350 };
