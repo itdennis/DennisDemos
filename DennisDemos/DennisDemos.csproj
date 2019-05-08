@@ -86,10 +86,12 @@
     <Compile Include="Demoes\StreamUtil.cs" />
     <Compile Include="Demoes\ThreadDemo.cs" />
     <Compile Include="Demoes\TrimDemo.cs" />
+    <Compile Include="Demoes\XiaoJuHua\Delegate_Lesson.cs" />
     <Compile Include="Demoes\YieldDemo.cs" />
     <Compile Include="Demoes\GenericDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Demoes\SequenceEqualDemo.cs" />
     <Compile Include="Utils\Class1.cs" />
     <Compile Include="Utils\Class2.cs" />
     <Compile Include="Utils\CodeConvertor.cs" />

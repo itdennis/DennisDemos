@@ -8,6 +8,7 @@ using System.Net;
 using System.IO;
 using DennisDemos.Demoes;
 using DennisDemos.Utils;
+using DennisDemos.Demoes.XiaoJuHua;
 
 namespace DennisDemos
 {
@@ -25,12 +26,12 @@ namespace DennisDemos
             //runer = new OtherDemo();
             //runer = new Converter_demo();
             //runer = new DateTimeDemo();
-            runer = new DelegateDemo();
-
+            //runer = new DelegateDemo();
+            //runer.Run();
+            //Console.ReadKey();
+            runer = new SequenceEqualDemo();
 
             runer.Run();
-
-            Console.ReadKey();
         }
     }
 }
