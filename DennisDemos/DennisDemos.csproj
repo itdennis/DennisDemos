@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DemoesHelper\AsyncHelpers.cs" />
     <Compile Include="DemoesHelper\Person.cs" />
     <Compile Include="DemoesHelper\Product.cs" />
     <Compile Include="Demoes\APMDemo.cs" />
