@@ -15,6 +15,37 @@ namespace DennisDemos.Demoes
             string b = "777";
             string testParameterList = string.Format(@"{{""key"": ""{0}"",'key2':'{1}'}}", a, b);
 
+            string test4others = @"{
+                                        ""filepath"": ""sdfssfdsfsdfsdf"",
+                                        ""Hyperlinklist"" : [
+                                                {""a"":""aValue"", ""b"":""1231placeholder4444"", ""c"":""xxx""},
+                                                {""a"":""aValue"", ""b"":""placeholder"", ""c"":""xxx""},
+                                                {""a"":""aValue"", ""b"":""placeholder"", ""c"":""xxx""}
+                                            ]}";
+
+
+            string placeholder = "99999999999";
+            string xxx = "44444444444444444444";
+
+            string result = string.Format(@"{{
+                                        ""filepath"": ""sdfssfdsfsdfsdf"",
+                                        ""Hyperlinklist"" : [
+                                                {{""a"":""aValue"", ""b"":""1231{0}4444"", ""c"":""{1}""}},
+                                                {{""a"":""aValue"", ""b"":""placeholder"", ""c"":""xxx""}},
+                                                {{""a"":""aValue"", ""b"":""placeholder"", ""c"":""xxx""}}
+                                            ]}}", placeholder, xxx );
+
+            
+            string result2 = $@"{{
+                                        ""filepath"": ""sdfssfdsfsdfsdf"",
+                                        ""Hyperlinklist"" : [
+                                                {{""a"":""aValue"", ""b"":""1231{placeholder}4444"", ""c"":""{xxx}""}},
+                                                {{""a"":""aValue"", ""b"":""placeholder"", ""c"":""xxx""}},
+                                                {{""a"":""aValue"", ""b"":""placeholder"", ""c"":""xxx""}}
+                                            ]}}";
+
+            var jObjectr = JsonConvert.DeserializeObject(result2);
+
 
             string testParameterList2 = string.Format("{0}", a);
 
