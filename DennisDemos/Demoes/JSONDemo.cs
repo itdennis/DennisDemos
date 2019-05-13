@@ -11,10 +11,17 @@ namespace DennisDemos.Demoes
     {
         public override void Run()
         {
-            string testParameterList = @"{
-                                            ""key"": ""value"",
-                                            'key2':'value',
-                                        }";
+            string a = "666";
+            string b = "777";
+            string testParameterList = string.Format(@"{{""key"": ""{0}"",'key2':'{1}'}}", a, b);
+
+
+            string testParameterList2 = string.Format("{0}", a);
+
+
+            string ss = $"{a}, this is dynimic string";
+
+
 
             List<Student> ls = new List<Student>();
             Student one = new Student(){ Name = "武松", y = 250 };

@@ -80,5 +80,32 @@ namespace DennisDemos.Demoes
             string[] resutls = await Task.WhenAll(tasks);
             return resutls;
         }
+
+        private async void ThrowExceptionAsync()
+        {
+            throw new InvalidOperationException();
+        }
+        public void AsyncVoidExceptions_CannotBeCaughtByCatch()
+        {
+            try
+            {
+                ThrowExceptionAsync();
+            }
+            catch (Exception)
+            {
+                // The exception is never caught here!
+                throw;
+            }
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            await Button1ClickAsync();
+        }
+        public async Task Button1ClickAsync()
+        {
+            // Do asynchronous work.
+            await Task.Delay(1000);
+        }
     }
 }

@@ -50,11 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemoesHelper\AsyncHelpers.cs" />
     <Compile Include="DemoesHelper\Person.cs" />
     <Compile Include="DemoesHelper\Product.cs" />
     <Compile Include="Demoes\APMDemo.cs" />
     <Compile Include="Demoes\AsyncDemo.cs" />
+    <Compile Include="Demoes\AsyncDemos\MainAsyncTest.cs" />
+    <Compile Include="Demoes\AsyncDemos\ProblemOfBlockAsync\AsyncMainDemo.cs" />
+    <Compile Include="Demoes\AsyncDemos\ProblemOfBlockAsync\DeadLockDemo.cs" />
+    <Compile Include="Demoes\AsyncDemos\ProblemOfBlockAsync\NotFullyAsynchronousDemo.cs" />
     <Compile Include="Demoes\CancellationTokenDemo.cs" />
     <Compile Include="Demoes\Converter_demo.cs" />
     <Compile Include="Demoes\CSVHelper.cs" />
