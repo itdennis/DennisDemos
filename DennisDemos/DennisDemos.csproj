@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Demoes\AsyncDemoBase.cs" />
+    <Compile Include="Demoes\AsyncDemos\ProblemOfBlockAsync\ConfigureAwaitDemo.cs" />
+    <Compile Include="Demoes\CheckWeekday.cs" />
     <Compile Include="DemoesHelper\Person.cs" />
     <Compile Include="DemoesHelper\Product.cs" />
     <Compile Include="Demoes\APMDemo.cs" />

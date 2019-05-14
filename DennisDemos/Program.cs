@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DennisDemos.Demoes;
-using System.Net;
-using System.IO;
-using DennisDemos.Demoes;
-using DennisDemos.Utils;
-using DennisDemos.Demoes.XiaoJuHua;
-using DennisDemos.Demoes.AsyncDemos;
+﻿using DennisDemos.Demoes;
 
 namespace DennisDemos
 {
@@ -17,13 +6,21 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            //DemoBase runer;
-            //runer.Run();
+
+            ConfigureAwaitDemo configureAwaitDemo = new ConfigureAwaitDemo();
+            configureAwaitDemo.Run().Wait() ;
+
+
+            DemoBase runer;
+
+            runer = new CheckWeekday();
+
+            runer.Run();
             //MainAsyncTest.Run().Wait();
             //AsyncDemo asyncDemo = new AsyncDemo();
             //asyncDemo.Run();
-            JSONDemo jSONDemo = new JSONDemo();
-            jSONDemo.Run();
+            //JSONDemo jSONDemo = new JSONDemo();
+            //jSONDemo.Run();
         }
     }
 }
