@@ -19,6 +19,7 @@ namespace DennisDemos.Demoes.AsyncDemos
             var delayTask = DelayAsync();
             // Wait for the delay to complete.
             delayTask.Wait();
+            delayTask.GetAwaiter().GetResult();
         }
 
 
