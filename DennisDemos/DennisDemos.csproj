@@ -89,10 +89,13 @@
     <Compile Include="Demoes\OtherDemo.cs" />
     <Compile Include="Demoes\ReflectDemo.cs" />
     <Compile Include="Demoes\RegexDemo.cs" />
+    <Compile Include="Demoes\WeChat\CacheHelper.cs" />
+    <Compile Include="Demoes\WeChat\SendWeChatDemo.cs" />
     <Compile Include="Demoes\Son.cs" />
     <Compile Include="Demoes\StreamUtil.cs" />
     <Compile Include="Demoes\ThreadDemo.cs" />
     <Compile Include="Demoes\TrimDemo.cs" />
+    <Compile Include="Demoes\WeChat\WeChat.cs" />
     <Compile Include="Demoes\XiaoJuHua\Delegate_Lesson.cs" />
     <Compile Include="Demoes\YieldDemo.cs" />
     <Compile Include="Demoes\GenericDemo.cs" />
@@ -121,6 +124,7 @@
     <Content Include="FrontEndDemoes\test.html" />
     <Content Include="FrontEndDemoes\TestBT.html" />
     <Content Include="FrontEndDemoes\VueDemo.html" />
+    <Content Include="test.sql" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
