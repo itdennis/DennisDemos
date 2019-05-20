@@ -124,7 +124,6 @@
     <Content Include="FrontEndDemoes\test.html" />
     <Content Include="FrontEndDemoes\TestBT.html" />
     <Content Include="FrontEndDemoes\VueDemo.html" />
-    <Content Include="test.sql" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
