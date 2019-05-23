@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,8 +64,57 @@ namespace DennisDemos.Demoes
             ls.Add(one2);
             ls.Add(one3);
             //序列化
-            string jsonData = JsonConvert.SerializeObject(ls);
+            string sqlData = JsonConvert.SerializeObject(ls);
+
+
+            //JArray sqlJarray = ;
+            //foreach (var removeItem in sqlJarray)
+            //{
+            //    if (removeItem.ToString().Contains("7161"))
+            //    {
+            //        sqlJarray.Remove(removeItem);
+            //        break;
+            //    }
+            //}
+
+
+            JArray sqlJarray = JArray.Parse(JsonConvert.SerializeObject(sqlData, Formatting.Indented, (JsonConverter[])null));
+            for (int i = 0; i < sqlJarray.Count; i++)
+            {
+                if (sqlJarray[i].ToString().Contains("7161"))
+                {
+                    sqlJarray.Remove(sqlJarray[i]);
+                    break;
+                }
+            }
+            //foreach (var removeItem in sqlJarray)
+            //{
+            //    if (removeItem.ToString().Contains("7161"))
+            //    {
+            //        sqlJarray.Remove(removeItem);
+            //        break;
+            //    }
+            //}
+
+            JArray filteredJarray = sqlJarray;
+
+
+            Func<JArray, JArray> selector = (source) => 
+            {
+                JArray target = new JArray();
+                for (int i = 0; i < source.Count; i++)
+                {
+                    if (!source[i].ToString().Contains("7161"))
+                    {
+                        target.Add(source[i]);
+                    }
+                }
+                return target;
+            };
+
+            var filterdArray = selector.Invoke(JArray.Parse(JsonConvert.SerializeObject(sqlData, Formatting.Indented, (JsonConverter[])null)));
         }
+
     }
     public class Student
     {
