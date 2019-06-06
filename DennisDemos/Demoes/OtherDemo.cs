@@ -11,9 +11,9 @@ namespace DennisDemos.Demoes
     {
         public override void Run()
         {
-            Dictionary<string, string> iiu = new Dictionary<string, string>();
-            iiu["001"] = "";
-           
+            string sss = "10000.0";
+            var d = Convert.ToDouble(sss);
+            string ss = string.Format("{0:N2}", d);
 
             //ModelName[ \t]*=[ \t]*Woodblocks(?<FormatVersion>V\\d)?\\.US\\.Slot(?<SlotId>[0-9]+)
             Regex test = new Regex("{\"FeatureId\":\"(?<FeatureId>[0-9]+)\",\"SinkNodeId\":\"[0-9]+\",\"SlotId\":\"[0-9]+\"}", RegexOptions.Compiled);
