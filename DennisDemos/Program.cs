@@ -11,6 +11,8 @@ namespace DennisDemos
             otherDemo.Run();
             //test version 2
 
+            //test a
+
 
 
             //var wx = new WeChat();
