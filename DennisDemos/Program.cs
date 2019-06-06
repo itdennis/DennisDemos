@@ -9,6 +9,10 @@ namespace DennisDemos
         {
             OtherDemo otherDemo = new OtherDemo();
             otherDemo.Run();
+            //test version 2
+
+
+
             //var wx = new WeChat();
             //var data = new
             //{
