@@ -89,6 +89,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessDemo", "DesignPattern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DennisWebDemos", "DennisWebDemos\DennisWebDemos\DennisWebDemos.csproj", "{491A2CF4-CC2D-438B-AD0C-357927DAF992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DennisAuthenticationDemo", "DennisAuthenticationDemo\DennisAuthenticationDemo.csproj", "{8E933B92-8850-40A0-BF94-B85455072928}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -191,6 +193,10 @@ Global
 		{491A2CF4-CC2D-438B-AD0C-357927DAF992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{491A2CF4-CC2D-438B-AD0C-357927DAF992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{491A2CF4-CC2D-438B-AD0C-357927DAF992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E933B92-8850-40A0-BF94-B85455072928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E933B92-8850-40A0-BF94-B85455072928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E933B92-8850-40A0-BF94-B85455072928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E933B92-8850-40A0-BF94-B85455072928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
