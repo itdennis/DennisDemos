@@ -8,24 +8,16 @@ using System.Web.Mvc;
 namespace DennisAuthenticationDemo.Controllers
 {
     [DennisActionFilter]
-    public class HomeController : Controller
+    [Authorize]
+    public class BlogController : Controller
     {
+        // GET: Blog
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult GetBlogById()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-        [Authorize]
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
