@@ -212,6 +212,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="CustomAttributes\DennisActionFilter.cs" />
+    <Compile Include="CustomAttributes\DennisAuthFilter.cs" />
+    <Compile Include="CustomAttributes\DennisAuthorizeAttribute.cs" />
     <Compile Include="CustomAttributes\ParameterValidateAttribute.cs" />
     <Compile Include="DBContext\AppDbContext.cs" />
     <Compile Include="Global.asax.cs">
