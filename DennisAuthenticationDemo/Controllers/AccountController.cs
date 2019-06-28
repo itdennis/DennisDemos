@@ -9,9 +9,11 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using DennisAuthenticationDemo.Models;
+using DennisAuthenticationDemo.CustomAttributes;
 
 namespace DennisAuthenticationDemo.Controllers
 {
+    [DennisActionFilter]
     [Authorize]
     public class AccountController : Controller
     {
