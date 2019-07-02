@@ -152,3 +152,5 @@
 /MVC_Demos/obj/Debug
 /WebApi_Demos/bin
 /WebApi_Demos/obj/Debug
+/HttpClientSample/bin/Debug/netcoreapp2.2
+/HttpClientSample/obj
