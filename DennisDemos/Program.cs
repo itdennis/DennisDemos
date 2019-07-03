@@ -7,7 +7,8 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            var s = 3 % 3;
+            AreaClass shape = new Shape(100);
+            System.Console.WriteLine(shape.Area);
         }
     }
 }
