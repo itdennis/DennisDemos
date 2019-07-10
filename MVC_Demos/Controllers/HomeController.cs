@@ -27,5 +27,12 @@ namespace MVC_Demos.Controllers
 
             return View();
         }
+
+        public ActionResult GetImg()
+        {
+            var avatarBytes = System.IO.File.ReadAllBytes(@"C:\Users\v-yanywu\source\repos\Dobi\Dobi\Dobi\wwwroot\images\avatar-placeholder.png");
+            FileContentResult result = File(avatarBytes, "image/png");
+            return result;
+        }
     }
 }
