@@ -11,6 +11,13 @@ namespace DennisDemos
             //System.Console.WriteLine(shape.Area);
 
             {
+                StaticTest staticTest = new StaticTest();
+                staticTest.Run("1", "2");
+                StaticTest staticTest1 = new StaticTest();
+                staticTest1.Run("1", "3");
+            }
+
+            {
                 string base64Encoded = "QzpcVXNlcnNcdi15YW55d3Vcc291cmNlXHJlcG9zXERvYmlcRG9iaVxEb2JpXHd3d3Jvb3RcaW1hZ2VzXElNR184NDIyLnBuZw==";
                 string base64Decoded;
                 byte[] data = System.Convert.FromBase64String(base64Encoded);
