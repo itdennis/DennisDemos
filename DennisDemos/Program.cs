@@ -10,6 +10,24 @@ namespace DennisDemos
             //AreaClass shape = new Shape(100);
             //System.Console.WriteLine(shape.Area);
 
+
+            {
+                string test1 = "a";
+                string test2 = "A";
+                if (test1.Equals(test2, System.StringComparison.InvariantCultureIgnoreCase))
+                {
+
+                }
+                if (test1.Equals(test2, System.StringComparison.OrdinalIgnoreCase))
+                {
+
+                }
+                if (test1.Equals(test2, System.StringComparison.CurrentCultureIgnoreCase))
+                {
+
+                }
+            }
+
             {
                 StaticTest staticTest = new StaticTest();
                 staticTest.Run("1", "2");
