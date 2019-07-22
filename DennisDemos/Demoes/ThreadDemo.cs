@@ -19,7 +19,14 @@ namespace DennisDemos.Demoes
             Console.WriteLine("main thread does some work, then sleeps.");
             Thread.Sleep(1000);
             Console.WriteLine(result);
-        }
 
+            Thread thread = new Thread(new ThreadStart(Run));
+            var res = Task.Run<string>(()=> { return GetReturnResult(); });
+        }
+        static string GetReturnResult()
+        {
+            Thread.Sleep(2000);
+            return "我是返回值";
+        }
     }
 }
