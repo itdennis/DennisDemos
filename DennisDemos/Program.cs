@@ -9,7 +9,10 @@ namespace DennisDemos
         {
             //AreaClass shape = new Shape(100);
             //System.Console.WriteLine(shape.Area);
-
+            {
+                JSONDemo demo = new JSONDemo();
+                demo.Run();
+            }
 
             {
                 string test1 = "a";
