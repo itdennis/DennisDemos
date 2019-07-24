@@ -13,6 +13,9 @@ namespace DennisDemos.Demoes.Delegate_Demos
         {
             Action action = new Action(DelegateFunction);
             this.RunAction(action);
+
+            Action action1 = new Action(DelegateFunction2);
+            this.RunAction(action1);
         }
 
         public void DelegateFunction(string str, ref string sth)
@@ -20,10 +23,18 @@ namespace DennisDemos.Demoes.Delegate_Demos
             sth = "yes, she is.";
             Console.WriteLine(str);
         }
-        
+
+        public void DelegateFunction2(string str, ref string sth)
+        {
+            sth = "no, xxxxxxxxx.";
+            Console.WriteLine(str);
+            // other logic
+        }
+
         public void RunAction(Action action)
         {
             string res = "";
+            action("d", ref res);
             action.Invoke("bear2 is a pig", ref res);
             Console.WriteLine(res);
         }
