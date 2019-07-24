@@ -11,6 +11,19 @@ namespace DennisDemos.Demoes
     {
         public void Run()
         {
+            Thread thread1 = new Thread(new ThreadStart(() => { Console.WriteLine("this is threadstart delegate"); }));
+            thread1.Start();
+
+
+            Thread thread2 = new Thread(new ParameterizedThreadStart((a) => { Console.WriteLine($"this is ParameterizedThreadStart delegate, {a}"); }));
+            thread2.Start("canshu");
+
+            Task task = new Task(() => { Console.WriteLine("this is task's action parameter delegate."); });
+            task.Start();
+            task.ConfigureAwait(false);
+
+            List<Task> tasks = new List<Task>();
+
             var result = ThreadPool.QueueUserWorkItem(
                 state =>
                 {

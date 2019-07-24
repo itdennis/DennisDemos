@@ -13,7 +13,9 @@ namespace DennisDemos.Demoes
     {
         public override void Run()
         {
-
+            List<string> testList = new List<string>() { "1", "2", "2", "1" };
+            List<string> testList2 = null;
+            var resultInfo = testList2.Select(a => a).Where(a => a == "4").ToList().FirstOrDefault();
 
 
 

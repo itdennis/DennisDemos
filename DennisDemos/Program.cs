@@ -1,5 +1,7 @@
 ﻿using DennisDemos.Demoes;
+using DennisDemos.Demoes.Delegate_Demos;
 using DennisDemos.Demoes.WeChat;
+using System;
 
 namespace DennisDemos
 {
@@ -7,6 +9,19 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
+
+
+            {
+                ActionDemo demo = new ActionDemo();
+                demo.Run();
+                Console.ReadKey();
+            }
+            {
+                ThreadDemo demo = new ThreadDemo();
+                demo.Run();
+            }
+
+
             //AreaClass shape = new Shape(100);
             //System.Console.WriteLine(shape.Area);
             {
