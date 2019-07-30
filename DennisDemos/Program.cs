@@ -9,7 +9,10 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-
+            {
+                TraceLogDemo demo = new TraceLogDemo();
+                demo.Run();
+            }
 
             {
                 ActionDemo demo = new ActionDemo();
