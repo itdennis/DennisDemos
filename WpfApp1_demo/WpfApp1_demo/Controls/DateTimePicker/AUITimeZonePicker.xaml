@@ -1,0 +1,68 @@
+﻿<!--/********************************************************************
+ *
+ *  PROPRIETARY and CONFIDENTIAL
+ *
+ *  This file is licensed from, and is a trade secret of:
+ *
+ *                   AvePoint, Inc.
+ *                   Harborside Financial Center
+ *                   9th Fl.   Plaza Ten
+ *                   Jersey City, NJ 07311
+ *                   United States of America
+ *                   Telephone: +1-800-661-6588
+ *                   WWW: www.avepoint.com
+ *
+ *  Refer to your License Agreement for restrictions on use,
+ *  duplication, or disclosure.
+ *
+ *  RESTRICTED RIGHTS LEGEND
+ *
+ *  Use, duplication, or disclosure by the Government is
+ *  subject to restrictions as set forth in subdivision
+ *  (c)(1)(ii) of the Rights in Technical Data and Computer
+ *  Software clause at DFARS 252.227-7013 (Oct. 1988) and
+ *  FAR 52.227-19 (C) (June 1987).
+ *
+ *  Copyright © 2001-2014 AvePoint® Inc. All Rights Reserved. 
+ *
+ *  Unpublished - All rights reserved under the copyright laws of the United States.
+ *  $Revision:  $
+ *  $Author:  $        
+ *  $Date:  $
+ */-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:AUI="clr-namespace:AvePoint.Migrator.Common.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:CommnonI18N="clr-namespace:MigratorTool.WPF.I18N">
+
+    <!--I18N-->
+    <CommnonI18N:I18NEntity x:Key="AveMessageI18N" />
+
+    <Style TargetType="AUI:AUITimeZonePicker">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="AUI:AUITimeZonePicker">
+                    <Border Background="White" Width="180">
+                        <StackPanel Margin="1" x:Name="Container">
+                            <!--<AUI:AUICalendar x:Name="calendar" HorizontalAlignment="Left"/>-->
+                            <ComboBox x:Name="LB" ItemsSource="{TemplateBinding AllTimeZones}" SelectedItem="{TemplateBinding PopupSelectedTimeZone}" DisplayMemberPath="DisplayName"/>
+                            <CheckBox x:Name="AutoAdjustCB" Visibility="{TemplateBinding PopupAutoAdjustClockImageVisibility}" IsChecked="{TemplateBinding AutoAdjustClockForDaylightSavingChanges}" Margin="3 2">
+                                <CheckBox.Content>
+                                    <TextBlock Text="{Binding Source='Automatically adjust clock for Daylight Saving Time', Converter={StaticResource AveMessageI18N},ConverterParameter='Common_9acd8bb6_acce_4bad_99b8_6c3d581d5d5f'}" TextWrapping="Wrap"/>
+                                </CheckBox.Content>
+                            </CheckBox>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,5,5,5" HorizontalAlignment="Right">
+                                <Button Content="{Binding Source='OK',Converter={StaticResource AveMessageI18N},ConverterParameter='Common_927cdd18_9cf8_42f0_85f0_33a6ed3948cb'}" x:Name="okButton" Width="50" Height="20"/>
+                                <AUI:HyperlinkButton Margin="5,0,0,0" Content="{Binding Source='Cancel',Converter={StaticResource AveMessageI18N},ConverterParameter='Common_0918052a_f242_41a7_b867_61543f14b2c6'}" x:Name="cancelLink" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

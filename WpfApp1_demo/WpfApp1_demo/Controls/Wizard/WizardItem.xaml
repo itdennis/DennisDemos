@@ -1,0 +1,70 @@
+﻿<!--/********************************************************************
+ *
+ *  PROPRIETARY and CONFIDENTIAL
+ *
+ *  This file is licensed from, and is a trade secret of:
+ *
+ *                   AvePoint, Inc.
+ *                   Harborside Financial Center
+ *                   9th Fl.   Plaza Ten
+ *                   Jersey City, NJ 07311
+ *                   United States of America
+ *                   Telephone: +1-800-661-6588
+ *                   WWW: www.avepoint.com
+ *
+ *  Refer to your License Agreement for restrictions on use,
+ *  duplication, or disclosure.
+ *
+ *  RESTRICTED RIGHTS LEGEND
+ *
+ *  Use, duplication, or disclosure by the Government is
+ *  subject to restrictions as set forth in subdivision
+ *  (c)(1)(ii) of the Rights in Technical Data and Computer
+ *  Software clause at DFARS 252.227-7013 (Oct. 1988) and
+ *  FAR 52.227-19 (C) (June 1987).
+ *
+ *  Copyright © 2001-2014 AvePoint® Inc. All Rights Reserved. 
+ *
+ *  Unpublished - All rights reserved under the copyright laws of the United States.
+ *  $Revision:  $
+ *  $Author:  $        
+ *  $Date:  $
+ */-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:aui="clr-namespace:AvePoint.Migrator.Common.Controls"
+                    xmlns:converter="clr-namespace:MigratorTool.WPF.View.Common.Converter"
+                    xmlns:wizard="clr-namespace:MigratorTool.WPF.View.Controls.Wizard">
+    <converter:Bool2VisibilityConverter x:Key="Bool2VisibilityConverter"/>
+    <wizard:WizardImageConverter x:Key="WizardImageConverter"/>
+
+    <Style TargetType="aui:WizardItem">
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="aui:WizardItem">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition MinWidth="{TemplateBinding LeftMargin}" Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition MinWidth="{TemplateBinding RightMargin}" Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border x:Name="Left_Line" Margin="-0.5,0,0,0" Height="3" Background="#D6D6D6" Visibility="{TemplateBinding IsFirst,Converter={StaticResource Bool2VisibilityConverter},ConverterParameter=Reverse}"/>
+                            <Image x:Name="Image" Grid.Column="1" Width="23" Height="23" Source="{TemplateBinding StepButtonStatus,Converter={StaticResource WizardImageConverter}}"/>
+                            <Border x:Name="Right_Line" Margin="0,0,-0.5,0" Height="3" Background="#D6D6D6" Grid.Column="2" Visibility="{TemplateBinding IsLast,Converter={StaticResource Bool2VisibilityConverter},ConverterParameter=Reverse}"/>
+                        </Grid>
+                        <Border Grid.Row="1" x:Name="border" Margin="0,5,0,5" HorizontalAlignment="Center">
+                            <TextBlock Margin="4 2 4 2" FontSize="13" VerticalAlignment="Center" Text="{TemplateBinding Title}" HorizontalAlignment="Center" x:Name="TitleTextBlock"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

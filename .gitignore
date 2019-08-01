@@ -155,3 +155,9 @@
 /HttpClientSample/bin/Debug/netcoreapp2.2
 /HttpClientSample/obj
 /MoreEffectiveInCSharpDemos/obj
+/DennisAuthenticationDemo/obj/Release
+/MVC_Demos/obj/Release
+/WebApi_Demos/obj/Release
+/WpfApp1_demo/.vs/WpfApp1_demo/v16
+/WpfApp1_demo/WpfApp1_demo/bin/Debug
+/WpfApp1_demo/WpfApp1_demo/obj

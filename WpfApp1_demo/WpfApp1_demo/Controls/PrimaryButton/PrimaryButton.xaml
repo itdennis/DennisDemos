@@ -1,0 +1,92 @@
+﻿<!--/********************************************************************
+ *
+ *  PROPRIETARY and CONFIDENTIAL
+ *
+ *  This file is licensed from, and is a trade secret of:
+ *
+ *                   AvePoint, Inc.
+ *                   Harborside Financial Center
+ *                   9th Fl.   Plaza Ten
+ *                   Jersey City, NJ 07311
+ *                   United States of America
+ *                   Telephone: +1-800-661-6588
+ *                   WWW: www.avepoint.com
+ *
+ *  Refer to your License Agreement for restrictions on use,
+ *  duplication, or disclosure.
+ *
+ *  RESTRICTED RIGHTS LEGEND
+ *
+ *  Use, duplication, or disclosure by the Government is
+ *  subject to restrictions as set forth in subdivision
+ *  (c)(1)(ii) of the Rights in Technical Data and Computer
+ *  Software clause at DFARS 252.227-7013 (Oct. 1988) and
+ *  FAR 52.227-19 (C) (June 1987).
+ *
+ *  Copyright © 2001-2014 AvePoint® Inc. All Rights Reserved. 
+ *
+ *  Unpublished - All rights reserved under the copyright laws of the United States.
+ *  $Revision:  $
+ *  $Author:  $        
+ *  $Date:  $
+ */-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:AvePoint.Migrator.Common.Controls">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/MigratorTool;component/Style/Common/Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <Style TargetType="local:PrimaryButton">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <Setter Property="Background" Value="#0E5990"/>
+        <Setter Property="Padding" Value="4,1,4,1"/>
+        <Setter Property="MinHeight" Value="22"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PrimaryButton">
+                    <Grid>
+                        <Border x:Name="BackgroundNorm" BorderThickness="1" Background="#0E5990" CornerRadius="0"/>
+                        <Border x:Name="BackgroundOver" BorderBrush="{StaticResource TextBoxOver}" BorderThickness="1" CornerRadius="1" Opacity="0"/>
+                        <Border x:Name="BackgroundPressed" Background="#0E5990" BorderBrush="{StaticResource TextBoxPressBrush}" BorderThickness="0.5" Opacity="0"/>
+                        <ContentPresenter
+                        		x:Name="contentPresenter"
+                        		Content="{TemplateBinding Content}"
+                        		ContentTemplate="{TemplateBinding ContentTemplate}"
+                        		VerticalAlignment="Center"
+                        		HorizontalAlignment="Center"
+                        		Margin="{TemplateBinding Padding}"/>
+                        <TextBlock Canvas.ZIndex="1" x:Name="DisabledOverlay" Text="{TemplateBinding Content}" Foreground="#FFFFFF"
+                                   VerticalAlignment="Center" HorizontalAlignment="Center" Margin="{TemplateBinding Padding}" Visibility="Collapsed"/>
+                        <Border x:Name="FocusVisualElement" Margin="1" BorderBrush="{StaticResource TextBoxFocus}" BorderThickness="0.5" Visibility="Collapsed"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--<Setter TargetName="BackgroundOver" Property="Opacity" Value="1"/>-->
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="BackgroundPressed" Property="Opacity" Value="0.84" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="DisabledOverlay" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="contentPresenter" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="BackgroundPressed" Property="Opacity" Value="0" />
+                            <Setter TargetName="FocusVisualElement" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="BackgroundOver" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="BackgroundNorm" Property="Background" Value="#ABBECC"/>
+                            <Setter TargetName="BackgroundNorm" Property="BorderBrush" Value="#ABBECC"/>
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter TargetName="FocusVisualElement" Property="BorderThickness" Value="0.5"/>
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="False">
+                            <Setter TargetName="FocusVisualElement" Property="BorderThickness" Value="0"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,52 @@
+﻿<!--/********************************************************************
+ *
+ *  PROPRIETARY and CONFIDENTIAL
+ *
+ *  This file is licensed from, and is a trade secret of:
+ *
+ *                   AvePoint, Inc.
+ *                   Harborside Financial Center
+ *                   9th Fl.   Plaza Ten
+ *                   Jersey City, NJ 07311
+ *                   United States of America
+ *                   Telephone: +1-800-661-6588
+ *                   WWW: www.avepoint.com
+ *
+ *  Refer to your License Agreement for restrictions on use,
+ *  duplication, or disclosure.
+ *
+ *  RESTRICTED RIGHTS LEGEND
+ *
+ *  Use, duplication, or disclosure by the Government is
+ *  subject to restrictions as set forth in subdivision
+ *  (c)(1)(ii) of the Rights in Technical Data and Computer
+ *  Software clause at DFARS 252.227-7013 (Oct. 1988) and
+ *  FAR 52.227-19 (C) (June 1987).
+ *
+ *  Copyright © 2001-2014 AvePoint® Inc. All Rights Reserved. 
+ *
+ *  Unpublished - All rights reserved under the copyright laws of the United States.
+ *  $Revision:  $
+ *  $Author:  $        
+ *  $Date:  $
+ */-->
+
+<UserControl x:Class="MigratorTool.WPF.View.Controls.Tree.TreeWithRightClickMenuDemo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+    <UserControl.Resources>
+        <HierarchicalDataTemplate x:Key="TreeHierarchicalDataTemplate" ItemsSource="{Binding Children}">
+            <Grid Margin="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Margin="-1,0,0,0" Width="16" Height="16" Source="{Binding Source='/Image/Common/tryout_16x16_normal.png', Converter={StaticResource ImageSourceConverter}}" Grid.Column="0"/>
+                <TextBlock Text="{Binding Name}" TextWrapping="NoWrap" Grid.Column="1" Margin="2,0,0,0"/>
+            </Grid>
+        </HierarchicalDataTemplate >
+    </UserControl.Resources>
+    <TreeView ItemsSource="{Binding TreeItems,Mode=TwoWay}" ItemTemplate="{StaticResource TreeHierarchicalDataTemplate}"/>
+</UserControl>

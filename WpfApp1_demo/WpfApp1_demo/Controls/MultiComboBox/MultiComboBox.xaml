@@ -1,0 +1,166 @@
+﻿<!--/********************************************************************
+ *
+ *  PROPRIETARY and CONFIDENTIAL
+ *
+ *  This file is licensed from, and is a trade secret of:
+ *
+ *                   AvePoint, Inc.
+ *                   Harborside Financial Center
+ *                   9th Fl.   Plaza Ten
+ *                   Jersey City, NJ 07311
+ *                   United States of America
+ *                   Telephone: +1-800-661-6588
+ *                   WWW: www.avepoint.com
+ *
+ *  Refer to your License Agreement for restrictions on use,
+ *  duplication, or disclosure.
+ *
+ *  RESTRICTED RIGHTS LEGEND
+ *
+ *  Use, duplication, or disclosure by the Government is
+ *  subject to restrictions as set forth in subdivision
+ *  (c)(1)(ii) of the Rights in Technical Data and Computer
+ *  Software clause at DFARS 252.227-7013 (Oct. 1988) and
+ *  FAR 52.227-19 (C) (June 1987).
+ *
+ *  Copyright © 2001-2014 AvePoint® Inc. All Rights Reserved. 
+ *
+ *  Unpublished - All rights reserved under the copyright laws of the United States.
+ *  $Revision:  $
+ *  $Author:  $        
+ *  $Date:  $
+ */-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:AUI="clr-namespace:AvePoint.Migrator.Common.Controls"
+    xmlns:CommnonI18N="clr-namespace:MigratorTool.WPF.I18N"
+    xmlns:vsm="clr-namespace:System.Windows"
+    xmlns:controls="clr-namespace:AvePoint.Migrator.Common.Controls">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/MigratorTool;component/Style/Common/Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <CommnonI18N:I18NEntity x:Key="AveMessageI18N" />
+
+    <ControlTemplate x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+            <Border x:Name="Border" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="#918F8A" Background="#FFFFFF" Visibility="Visible"/>
+            <Border Grid.Column="0" Margin="1" >
+                <Border.Background>
+                    <SolidColorBrush Color="#FFFFFFFF"/>
+                </Border.Background>
+            </Border>
+            <Path x:Name="Arrow" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0 0 L 4 4 L 8 0 Z" >
+                <Path.Fill>
+                    <SolidColorBrush Color="#615F5A"/>
+                </Path.Fill>
+            </Path>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="Border" Property="Background" Value="#EAE9E6"/>
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter TargetName="Border" Property="Background" Value="#EAE9E6"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <!--ComboBox-->
+    <Style TargetType="AUI:MultiComboBox">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility"  Value="Auto" />
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+        <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
+        <Setter Property="MinWidth"  Value="50" />
+        <Setter Property="MinHeight" Value="20" />
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Padding" Value="5 0 0 0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="AUI:MultiComboBox">
+                    <Grid>
+                        <vsm:VisualStateManager.VisualStateGroups>
+                            <vsm:VisualStateGroup x:Name="CommonStates">
+                                <vsm:VisualState x:Name="Normal" />
+                                <vsm:VisualState x:Name="MouseOver" />
+                            </vsm:VisualStateGroup>
+                            <vsm:VisualStateGroup x:Name="EditStates">
+                                <vsm:VisualState x:Name="Editable">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ContentSite">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </vsm:VisualState>
+                                <vsm:VisualState x:Name="Uneditable" />
+                            </vsm:VisualStateGroup>
+                        </vsm:VisualStateManager.VisualStateGroups>
+                        <ToggleButton x:Name="ToggleButton" 
+                                      Template="{StaticResource ComboBoxToggleButton}" 
+                                      Grid.Column="2"
+                                      Focusable="false"
+                                      ClickMode="Press"
+                                      IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"/>
+
+                        <ContentPresenter x:Name="ContentSite"
+                                          IsHitTestVisible="False"
+                                          Margin="5,2,23,2"
+                                          VerticalAlignment="Stretch"
+                                          HorizontalAlignment="Left">
+                            <ContentPresenter.Content>
+                                <TextBlock Foreground="#aaaaaa" Text="{TemplateBinding SelectionText}" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                            </ContentPresenter.Content>
+                        </ContentPresenter>
+                        
+                        <Popup x:Name="Popup" Placement="Bottom"
+                               IsOpen="{TemplateBinding IsDropDownOpen}"
+                               AllowsTransparency="True"
+                               Focusable="False"
+                               PopupAnimation="Slide">
+                            <Grid x:Name="DropDown"
+                                  SnapsToDevicePixels="True"
+                                  MinWidth="{TemplateBinding ActualWidth}"
+                                  MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                <Border x:Name="DropDownBorder" BorderThickness="1" BorderBrush="#888888" Background="#FFFFFF" Margin="0,1,0,0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <StackPanel Grid.Row="0" MaxWidth="350" Visibility="{TemplateBinding AdditionalContentVisibility}">
+                                            <ContentControl x:Name="AdditionalElementContentControl" Content="{TemplateBinding AdditionalElement}" IsTabStop="False"/>
+                                            <Border BorderThickness="0,0,0,1" BorderBrush="#FFFFFF"/>
+                                        </StackPanel>
+
+                                        <StackPanel Grid.Row="1">
+                                            <AUI:MultiComboItem x:Name="SelectAllComboBoxItem" ForSelectAllVisibility="Visible" IsSelected="{TemplateBinding IsSelectAll}" Content="{TemplateBinding SelectAllText}" Padding="3"/>
+                                            <Border Margin="3 0 3 0" BorderBrush="#BDBDBD" BorderThickness="1">
+                                                <ScrollViewer x:Name="ScrollViewer" MaxHeight="160" MaxWidth="280" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="1" BorderThickness="0" HorizontalAlignment="Left">
+                                                    <ItemsPresenter/>
+                                                </ScrollViewer>
+                                            </Border>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="2,5,0,5">
+                                                <controls:PrimaryButton Width="50" Height="20" x:Name="OKButton" Content="{Binding Source='OK', Converter={StaticResource AveMessageI18N},ConverterParameter='Common_7520db67_6b06_4b48_848e_e182f396a242'}"/>
+                                                <controls:HyperlinkButton x:Name="CancelButton" Margin="10,0,5,0" VerticalContentAlignment="Center" VerticalAlignment="Center" Content="{Binding Source='Cancel', Converter={StaticResource AveMessageI18N},ConverterParameter='Common_fba480c3_8f6b_4c90_bcc7_05bbaed949b7'}"/>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                        </Popup>
+
+                        <!--<Rectangle x:Name="DisabledVisualElement" Fill="#A5FFFFFF" RadiusX="1" RadiusY="1" IsHitTestVisible="false" Visibility="Collapsed" />-->
+                        <Rectangle x:Name="FocusVisualElement" Margin="-1" Stroke="{StaticResource selectedStroke}" StrokeThickness="1" RadiusX="1" RadiusY="1" IsHitTestVisible="false" Visibility="Collapsed"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

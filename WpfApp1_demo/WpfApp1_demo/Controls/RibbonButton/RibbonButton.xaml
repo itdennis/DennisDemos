@@ -1,0 +1,107 @@
+﻿<!--/********************************************************************
+ *
+ *  PROPRIETARY and CONFIDENTIAL
+ *
+ *  This file is licensed from, and is a trade secret of:
+ *
+ *                   AvePoint, Inc.
+ *                   Harborside Financial Center
+ *                   9th Fl.   Plaza Ten
+ *                   Jersey City, NJ 07311
+ *                   United States of America
+ *                   Telephone: +1-800-661-6588
+ *                   WWW: www.avepoint.com
+ *
+ *  Refer to your License Agreement for restrictions on use,
+ *  duplication, or disclosure.
+ *
+ *  RESTRICTED RIGHTS LEGEND
+ *
+ *  Use, duplication, or disclosure by the Government is
+ *  subject to restrictions as set forth in subdivision
+ *  (c)(1)(ii) of the Rights in Technical Data and Computer
+ *  Software clause at DFARS 252.227-7013 (Oct. 1988) and
+ *  FAR 52.227-19 (C) (June 1987).
+ *
+ *  Copyright © 2001-2014 AvePoint® Inc. All Rights Reserved. 
+ *
+ *  Unpublished - All rights reserved under the copyright laws of the United States.
+ *  $Revision:  $
+ *  $Author:  $        
+ *  $Date:  $
+ */-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:AvePoint.Migrator.Common.Controls"
+                    xmlns:vsm="clr-namespace:System.Windows">
+    <Style TargetType="{x:Type local:RibbonButton}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Padding" Value="3"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="Regular"/>
+        <Setter Property="Foreground" Value="#0072C6"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:RibbonButton}">
+                    <Grid x:Name="parentGrid">
+                        <vsm:VisualStateManager.VisualStateGroups>
+                            <vsm:VisualStateGroup x:Name="CommonStates">
+                                <vsm:VisualState x:Name="Normal">
+                                </vsm:VisualState>
+                                <vsm:VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <!--<DoubleAnimation Duration="0" Storyboard.TargetName="Background" Storyboard.TargetProperty="Opacity" To="1"/>-->
+                                    </Storyboard>
+                                </vsm:VisualState>
+                                <vsm:VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <!--<DoubleAnimation Duration="0" Storyboard.TargetName="Background" Storyboard.TargetProperty="Opacity" To="1"/>-->
+                                    </Storyboard>
+                                </vsm:VisualState>
+                                <vsm:VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0" Storyboard.TargetName="DisabledVisualElement" Storyboard.TargetProperty="Opacity" To=".55"/>
+                                    </Storyboard>
+                                </vsm:VisualState>
+                            </vsm:VisualStateGroup>
+                        </vsm:VisualStateManager.VisualStateGroups>
+                        <!--<Border x:Name="Background" BorderThickness="0.5" Margin="5 1 0 1" BorderBrush="#FFA3AEB9" Opacity="0"/>-->
+
+                        <Grid HorizontalAlignment="Center" Height="25" Margin="10,0,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock VerticalAlignment="Center" Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Text}"/>
+                            <Path Data="M 0 0 L 4 4 L 8 0 Z" Fill="{TemplateBinding Foreground}" x:Name="Arrow" VerticalAlignment="Center" Grid.Column="1" HorizontalAlignment="Right"/>
+                        </Grid>
+
+                        <Popup x:Name="Popup" Placement="Bottom" AllowsTransparency="True" Focusable="False" PopupAnimation="Fade">
+                            <Border x:Name="SubmenuBorder" SnapsToDevicePixels="True" BorderThickness="1" Background="Transparent">
+                                <Border.BorderBrush>
+                                    <SolidColorBrush Color="#CCCEDB" />
+                                </Border.BorderBrush>
+                                <Grid>
+                                    <Grid Background="#E7E8EC"/>
+                                    <ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" MaxHeight="550">
+                                        <ContentPresenter Content="{TemplateBinding MenuContent}" HorizontalAlignment="Stretch"/>
+                                    </ScrollViewer>
+                                </Grid>
+                            </Border>
+                        </Popup>
+                        <Rectangle x:Name="DisabledVisualElement" RadiusX="3" RadiusY="3" Fill="#FFFFFFFF" Opacity="0" IsHitTestVisible="false" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <!--<Setter TargetName="Background" Property="Opacity" Value="0.5"/>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
