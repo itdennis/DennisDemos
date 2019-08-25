@@ -2,6 +2,7 @@
 using DennisDemos.Demoes.Delegate_Demos;
 using DennisDemos.Demoes.WeChat;
 using System;
+using System.Collections.Generic;
 
 namespace DennisDemos
 {
@@ -9,6 +10,39 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
+            {
+                Dictionary<string, string> keyValuePairs = new Dictionary<string, string>()
+                {
+                    {"a","n" },{ "b","xx"}
+                };
+
+                Dictionary<string, string> keyValuePairs2 = new Dictionary<string, string>()
+                {
+                    {"a","n" },{ "b","xx"}
+                };
+
+                List<int> listTest = new List<int> { 1, 2, 31, 1 };
+
+                bool result = true;
+                foreach (var item in keyValuePairs)
+                {
+                    if (keyValuePairs2.ContainsKey(item.Key))
+                    {
+                        if (keyValuePairs2[item.Key] == item.Value)
+                        {
+                            continue;
+                        }
+                        result = false;
+                        break;   
+                    }
+                    result = false;
+                    break;
+                }
+            }
+
+
+
+
             {
                 TraceLogDemo demo = new TraceLogDemo();
                 demo.Run();
