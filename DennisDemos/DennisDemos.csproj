@@ -102,6 +102,8 @@
     <Compile Include="Demoes\XiaoJuHua\Delegate_Lesson.cs" />
     <Compile Include="Demoes\YieldDemo.cs" />
     <Compile Include="Demoes\GenericDemo.cs" />
+    <Compile Include="Interview\CheckTwoCollectionEqual.cs" />
+    <Compile Include="Interview\IEqualityComparer_demo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Demoes\SequenceEqualDemo.cs" />
