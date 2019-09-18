@@ -8,12 +8,24 @@ namespace DennisDemos.Interview
 {
     public class CheckTwoCollectionEqual
     {
-        #region Demo
-        static void Demo()
+        public static void Demo()
         {
             var now = DateTimeOffset.UtcNow.DateTime.ToShortDateString();
-            List<string> lA = new List<string>() { "111", "222", "222", "333" };
-            List<string> lB = new List<string>() { "111", "222", "333", "333" };
+            List<string> lA = new List<string>() { "111", "333", "222" };
+            List<string> lB = new List<string>() { "111", "222", "333" };
+
+            var result = lA.Select(lla => lla).OrderByDescending(lla => lla).ToList();
+
+            int[] a = { 1, 2, 3, 4 };
+            int[] b = { 1, 4, 3, 2 };
+            Console.WriteLine($"int SequenceEqual: {a.SequenceEqual(b)}");
+
+            List<int> la = new List<int>() { 1, 2, 3, 4 };
+            List<int> lb = new List<int>() { 1, 4, 3, 2 };
+            Console.WriteLine(la.SequenceEqual(lb));
+
+
+
             if (ScrambledEquals(lA, lB))
             {
                 Console.WriteLine($"la and lb is ScrambledEquals equal.");
@@ -24,7 +36,7 @@ namespace DennisDemos.Interview
             }
             if (lA.SequenceEqual(lB))
             {
-                Console.WriteLine($"la and lb is SequenceEqual.");
+                Console.WriteLine($"SequenceEqual ");
             }
 
             Dictionary<string, string> dA = new Dictionary<string, string>() { { "111", "value" }, { "222", "value" }, { "333", "value" }, { "444", "value" }, { "555", "value" } };
@@ -70,7 +82,6 @@ namespace DennisDemos.Interview
             var cnt = new Dictionary<T, int>(comparer);
             return false;
         }
-        #endregion
 
         
     }
