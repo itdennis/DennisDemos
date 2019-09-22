@@ -66,6 +66,7 @@
     <Compile Include="Demoes\Converter_demo.cs" />
     <Compile Include="Demoes\CSVHelper.cs" />
     <Compile Include="Demoes\DateTimeDemo.cs" />
+    <Compile Include="Demoes\DatetimeOffset.cs" />
     <Compile Include="Demoes\DebugInfo.cs" />
     <Compile Include="Demoes\Delegate_Demos\ActionDemo.cs" />
     <Compile Include="Demoes\Delegate_Demos\DelegateDemo3.cs" />
