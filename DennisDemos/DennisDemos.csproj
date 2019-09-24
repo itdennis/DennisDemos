@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClassDemo.cs" />
+    <Compile Include="Demoes\CSharp_basis\Ref_Out.cs" />
     <Compile Include="Demoes\JsonDemo\JsonStrConvertToDic.cs" />
     <Compile Include="Demoes\OldDemos\AsyncDemoBase.cs" />
     <Compile Include="Demoes\AsyncDemos\ProblemOfBlockAsync\ConfigureAwaitDemo.cs" />
@@ -101,7 +102,6 @@
     <Compile Include="Demoes\OldDemos\ThreadDemo.cs" />
     <Compile Include="Demoes\OldDemos\TrimDemo.cs" />
     <Compile Include="Demoes\WeChat\WeChat.cs" />
-    <Compile Include="Demoes\XiaoJuHua\Delegate_Lesson.cs" />
     <Compile Include="Demoes\OldDemos\YieldDemo.cs" />
     <Compile Include="Demoes\OldDemos\GenericDemo.cs" />
     <Compile Include="Interview\CheckTwoCollectionEqual.cs" />
