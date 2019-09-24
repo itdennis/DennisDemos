@@ -1,27 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DennisCoreDemos.Csharp_8.Async_streams
 {
-    class Async_Streams
+    public  class Async_Streams
     {
-        async IAsyncEnumerable<int> GetBigResultsAsync()
+        static int SumFromOneToCount(int count)
         {
-            await foreach (var result in GetResultsAsync())
-            {
-                if (result > 20) yield return result;
-            }
-        }
+            ConsoleExt.WriteLine("SumFromOneToCount called!");
 
-        private async Task<IEnumerable<object>> GetResultsAsync()
-        {
-            //Task<string[]> result = await File.ReadAllLinesAsync(@"C:\Users\v-yanywu\Desktop\dennis\pic\test.txt", Encoding.UTF8);
-            //return result;
-            var res = File.ReadAllLines(@"C:\Users\v-yanywu\Desktop\dennis\pic\test.txt", Encoding.UTF8);
-            return res.
+            var sum = 0;
+            for (var i = 0; i <= count; i++)
+            {
+                sum = sum + i;
+            }
+            return sum;
         }
     }
+
+
 }
