@@ -10,7 +10,7 @@ namespace DennisCoreDemos.Csharp_8.Async_streams
         /// we use this method to get the data from producter, but if the producter's logic is complexity enough, 
         /// the main thread will be blocked for a long time, so that why we need the async to slove this problem.
         /// </summary>
-        public void GetDataFromProducter1() 
+        public void SumFromOneToCount() 
         {
             const int count = 5;
             ConsoleExt.WriteLine($"Starting the application with count: {count}!");
@@ -26,7 +26,7 @@ namespace DennisCoreDemos.Csharp_8.Async_streams
         /// this is the benifit of yield feature. we can get some of the result before we get the whole result.
         /// but we can also see, the producter's logic still block the main thread.
         /// </summary>
-        public void GetDataFromProducter2() 
+        public void SumFromOneToCountYield() 
         {
             const int count = 5;
             ConsoleExt.WriteLine("Sum with yield starting.");
@@ -46,13 +46,34 @@ namespace DennisCoreDemos.Csharp_8.Async_streams
         /// we need some solution to fix both main threads block and split the results.
         /// how to fix that requirement? 
         /// </summary>
-        public async void GetDataFromProducter3() 
+        public async void SumFromOneToCountAsync() 
         {
             const int count = 5;
             ConsoleExt.WriteLine("async example starting.");
             var result = await Producter.SumFromOneToCountAsync(count);
             ConsoleExt.WriteLine("async Result: " + result);
             ConsoleExt.WriteLine("async completed.");
+
+            ConsoleExt.WriteLine("################################################");
+            ConsoleExt.WriteLine(Environment.NewLine);
+        }
+
+        /// <summary>
+        /// we used async method and will avoid to block the main thread, 
+        /// also we can get the every iteration of the value, but it is come from a collection
+        /// w
+        /// </summary>
+        public async void SumFromOneToCountTaskIEnumerable() 
+        {
+            const int count = 5;
+            ConsoleExt.WriteLine("SumFromOneToCountAsyncIEnumerable started!");
+            var scs = await Producter.SumFromOneToCountTaskIEnumerable(count);
+            ConsoleExt.WriteLine("SumFromOneToCountAsyncIEnumerable done!");
+
+            foreach (var sc in scs)
+            {
+                ConsoleExt.WriteLine($"AsyncIEnumerable Result: {sc}");
+            }
 
             ConsoleExt.WriteLine("################################################");
             ConsoleExt.WriteLine(Environment.NewLine);
