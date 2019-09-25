@@ -166,3 +166,7 @@
 /DennisCoreDemos/bin/Debug/netcoreapp3.0
 /Core3.0WebApp/bin/Debug/netcoreapp3.0
 /Core3.0WebApp/obj
+/DesignPatterns
+/Dennis.Container/bin/Debug/netcoreapp3.0
+/BookingSystem.Run/bin/Debug/netcoreapp3.0
+/BookingSystem.Common/bin/Debug/netcoreapp3.0
