@@ -7,18 +7,21 @@ using System.Threading.Tasks;
 
 namespace DennisCoreDemos.Csharp_8.Async_streams
 {
-    public  class Async_Streams
+    public class Async_Streams
     {
-        static int SumFromOneToCount(int count)
+        public interface IAsyncEnumerable<out T>
         {
-            ConsoleExt.WriteLine("SumFromOneToCount called!");
-
-            var sum = 0;
-            for (var i = 0; i <= count; i++)
-            {
-                sum = sum + i;
-            }
-            return sum;
+            IAsyncEnumerator<T> GetAsyncEnumerator();
+        }
+        public interface IAsyncEnumerator<out T> : IAsyncDisposable
+        {
+            Task<bool> MoveNextAsync();
+            T Current { get; }
+        }
+        // Async Streams Feature 可以被异步销毁 
+        public interface IAsyncDisposable
+        {
+            Task DiskposeAsync();
         }
     }
 
