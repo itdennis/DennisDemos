@@ -16,5 +16,8 @@ namespace Core3._0WebApp.Models
         [DataType(DataType.Date)]
         public DateTime CreateOnUtc { get; set; }
         public string ContentAbstract { get; set; }
+
+        [Timestamp]
+        public byte[] Timestamp { get; set; }
     }
 }
