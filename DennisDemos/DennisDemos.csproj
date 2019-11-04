@@ -108,6 +108,8 @@
     <Compile Include="Interview\IEqualityComparer_demo.cs" />
     <Compile Include="JustForTest\Class1.cs" />
     <Compile Include="JustForTest\Class2.cs" />
+    <Compile Include="JustForTest\LeetCodeInversedNum.cs" />
+    <Compile Include="JustForTest\SplitString2Char.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Demoes\OldDemos\SequenceEqualDemo.cs" />
