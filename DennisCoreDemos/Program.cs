@@ -13,10 +13,10 @@ namespace DennisCoreDemos
             //await Customer.AsyncStreamsDemo();
             //await Lc14.Run(new string[] { "flower", "flow", "flight"});
             //await Lc15.Run("[");
-            await Lc26.Run(new int[] { 1, 1, 2 });
+            //await Lc26.Run(new int[] { 1, 1, 2 });
             //await Lc15.Run("[");
 
-            await Lc27.Run(new int[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2);
+            await Lc27.Run(new int[] { 1,2,3,2,4 }, 2);
         }
     }
 }

@@ -16,29 +16,22 @@ namespace DennisCoreDemos.LeetCodes
 
         private static int DoOps(int[] nums, int val)
         {
-            if (nums.Length == 0)
+            int i = 0;
+            int n = nums.Length;
+            while (i < n)
             {
-                return 0;
-            }
-            int j = 0;
-            for (int i = 0; i < nums.Length; i++)
-            {
-                while (nums[i] == val)
+                if (nums[i] == val)
                 {
-                    var old = i;
+                    nums[i] = nums[n - 1];
+                    // reduce array size by one
+                    n--;
+                }
+                else
+                {
                     i++;
-                    if (i >= nums.Length)
-                    {
-                        break;
-                    }
-                    nums[old] = nums[i];
-                }
-                if (i < nums.Length && nums[i] != val)
-                {
-                    j++;
                 }
             }
-            return j;
+            return n;
         }
     }
 }
