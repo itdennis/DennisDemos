@@ -15,8 +15,11 @@ namespace DennisCoreDemos
             //await Lc15.Run("[");
             //await Lc26.Run(new int[] { 1, 1, 2 });
             //await Lc15.Run("[");
+            //await Lc27.Run(new int[] { 1,2,3,2,4 }, 2);
+            //await Lc28.Run("hello", "ll");
+            Console.WriteLine(await Lc35.Run(new int[] { 1, 3, 5 }, 3));
 
-            await Lc27.Run(new int[] { 1,2,3,2,4 }, 2);
+            Console.ReadKey();
         }
     }
 }
