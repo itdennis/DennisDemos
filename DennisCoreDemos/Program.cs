@@ -19,6 +19,9 @@ namespace DennisCoreDemos
             //await Lc28.Run("hello", "ll");
             //Console.WriteLine(await Lc35.Run(new int[] { 1, 3, 5 }, 3));
             //Console.WriteLine(await Lc704.Run(new int[] { -1, 0, 3, 5, 9, 12 }, 2));
+            //Console.WriteLine(await Lc69.Run(2147395599));
+            Console.WriteLine(await Lc53.Run(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
+            //Console.WriteLine(await Lc704.Run(new int[] { -1, 0, 3, 5, 9, 12 }, 2));
             Console.WriteLine(await Lc300.Run(new int[] { 10, 9, 2, 5, 3, 7, 101, 18 }));
 
             Console.ReadKey();
