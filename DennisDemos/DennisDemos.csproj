@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClassDemo.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
     <Compile Include="Demoes\CSharp_basis\Ref_Out.cs" />
     <Compile Include="Demoes\JsonDemo\JsonStrConvertToDic.cs" />
     <Compile Include="Demoes\OldDemos\AsyncDemoBase.cs" />
