@@ -93,6 +93,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core3.0WebApp", "Core3.0Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DennisCoreDemos", "DennisCoreDemos\DennisCoreDemos.csproj", "{B333CF18-6CB0-4F15-8F9D-5FAA1456D4D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp_AutoFac", "ConsoleApp_AutoFac\ConsoleApp_AutoFac.csproj", "{129E6743-3A41-400A-BA50-DBB0591843AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,10 @@ Global
 		{B333CF18-6CB0-4F15-8F9D-5FAA1456D4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B333CF18-6CB0-4F15-8F9D-5FAA1456D4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B333CF18-6CB0-4F15-8F9D-5FAA1456D4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{129E6743-3A41-400A-BA50-DBB0591843AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129E6743-3A41-400A-BA50-DBB0591843AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129E6743-3A41-400A-BA50-DBB0591843AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129E6743-3A41-400A-BA50-DBB0591843AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

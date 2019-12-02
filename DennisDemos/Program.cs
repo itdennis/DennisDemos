@@ -16,6 +16,7 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
+            var res = Math.Round(((decimal)1 / 12), 2);
             //Ref_Out.Out_demo();
             Solution solution = new Solution();
             //solution.Reverse(-2147483648); 
