@@ -55,7 +55,9 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
     <Compile Include="Demoes\Concurrency\ConcurrentDictionary.cs" />
+    <Compile Include="Demoes\Concurrency\volatileDemo.cs" />
     <Compile Include="Demoes\CSharp_basis\Ref_Out.cs" />
+    <Compile Include="Demoes\GC\GenerationDemo.cs" />
     <Compile Include="Demoes\JsonDemo\JsonStrConvertToDic.cs" />
     <Compile Include="Demoes\OldDemos\AsyncDemoBase.cs" />
     <Compile Include="Demoes\AsyncDemos\ProblemOfBlockAsync\ConfigureAwaitDemo.cs" />
@@ -90,7 +92,7 @@
     <Compile Include="Demoes\IOCDemos\DALOracleHelper.cs" />
     <Compile Include="Demoes\IOCDemos\ISqlHelper.cs" />
     <Compile Include="Demoes\IOCDemos\UI.cs" />
-    <Compile Include="Demoes\OldDemos\JSONDemo.cs" />
+    <Compile Include="Demoes\JsonDemo\JSONDemo.cs" />
     <Compile Include="Demoes\OldDemos\LambdaDemo.cs" />
     <Compile Include="Demoes\OldDemos\LinqDemo.cs" />
     <Compile Include="Demoes\OldDemos\ManualResetEventDemo.cs" />
@@ -99,13 +101,10 @@
     <Compile Include="Demoes\OldDemos\ReflectDemo.cs" />
     <Compile Include="Demoes\OldDemos\RegexDemo.cs" />
     <Compile Include="Demoes\OldDemos\TraceLogDemo.cs" />
-    <Compile Include="Demoes\WeChat\CacheHelper.cs" />
-    <Compile Include="Demoes\WeChat\SendWeChatDemo.cs" />
     <Compile Include="Demoes\OldDemos\Son.cs" />
     <Compile Include="Demoes\OldDemos\StreamUtil.cs" />
     <Compile Include="Demoes\OldDemos\ThreadDemo.cs" />
     <Compile Include="Demoes\OldDemos\TrimDemo.cs" />
-    <Compile Include="Demoes\WeChat\WeChat.cs" />
     <Compile Include="Demoes\OldDemos\YieldDemo.cs" />
     <Compile Include="Demoes\OldDemos\GenericDemo.cs" />
     <Compile Include="Interview\CheckTwoCollectionEqual.cs" />
