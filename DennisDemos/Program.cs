@@ -2,7 +2,6 @@
 using DennisDemos.Demoes.Concurrency;
 using DennisDemos.Demoes.CSharp_basis;
 using DennisDemos.Demoes.Delegate_Demos;
-using DennisDemos.Demoes.WeChat;
 using DennisDemos.Interview;
 using DennisDemos.JustForTest;
 using Newtonsoft.Json;

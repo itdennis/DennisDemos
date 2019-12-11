@@ -172,3 +172,5 @@
 /BookingSystem.Common/bin/Debug/netcoreapp3.0
 /ConsoleApp_AutoFac/bin/Debug/netcoreapp3.0
 /ConsoleApp_AutoFac/obj
+/ASP.Net Core Demos/MiddleWareDemos/Demo_IpRateLimitMiddleware/bin/Debug
+/ASP.Net Core Demos/MiddleWareDemos/Demo_IpRateLimitMiddleware/obj
