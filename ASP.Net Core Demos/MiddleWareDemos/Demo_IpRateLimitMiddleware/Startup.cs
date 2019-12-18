@@ -22,6 +22,18 @@ namespace Demo_IpRateLimitMiddleware
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.Use(async (context, next) =>
+            {
+                System.Diagnostics.Debug.WriteLine("before next invoke.");
+                await next.Invoke();
+                System.Diagnostics.Debug.WriteLine("after next invoke.");
+            });
+
+            app.Run(async context =>
+            {
+                await context.Response.WriteAsync("Hello from 2nd delegate.");
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
