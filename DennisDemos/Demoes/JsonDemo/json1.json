@@ -1,0 +1,53 @@
+{
+  "CatInformation": {
+    "Id": "c8d50a60-c809-4736-859c-1e4b49c6f6bb",
+    "Name": "XiaoMing",
+    "Age": 3,
+    "Weight": 1000
+  },
+  "Activities": [
+    {
+      "Id": "a0d6692c",
+      "Tag": "Swimming",
+      "Tag2": "str1",
+      "Tag3": "str1"
+    },
+    {
+      "Id": "5f9f15fe",
+      "Tag": "Chat",
+      "Tag2": "str1",
+      "Tag3": "str1"
+    },
+    {
+      "Id": "24937eb5",
+      "Tag": "BeatMourse",
+      "Tag2": "str1",
+      "Tag3": "str1"
+    },
+    {
+      "Id": "24937eb5",
+      "Tag": "Eat",
+      "Tag2": "str1",
+      "Tag3": "str1"
+    },
+    {
+      "Id": "9e7e5826",
+      "Tag": "Drink",
+      "Tag2": "str1",
+      "Tag3": "str1"
+    },
+    {
+      "Id": "9e7e5826",
+      "Tag": "Sleep",
+      "Tag2": "str1",
+      "Tag3": "str1"
+    },
+    {
+      "Id": "9e7e5826",
+      "Tag": "Play",
+      "Tag2": "str1",
+      "Tag3": "str1"
+    }
+  ]
+}
+

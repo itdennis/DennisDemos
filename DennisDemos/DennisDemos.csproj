@@ -124,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="Demoes\JsonDemo\json1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Multi Validation Tutorial.md" />
     <None Include="packages.config" />
   </ItemGroup>

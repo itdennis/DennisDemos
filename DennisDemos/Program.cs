@@ -16,8 +16,9 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            ConcurrentDictionaryDemo.Run();
-
+            //ConcurrentDictionaryDemo.Run();
+            JSONDemo demo = new JSONDemo();
+            demo.Run();
         }
     }
 }
