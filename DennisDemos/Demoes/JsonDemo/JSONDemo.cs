@@ -16,7 +16,51 @@ namespace DennisDemos.Demoes
             using (StreamReader sr = File.OpenText("Demoes\\JsonDemo\\json1.json"))
             {
                 string jsonStr = sr.ReadToEnd();
+
+                var res = nameof(Run);
+
+                Dictionary<string, bool> keyValuePairs = new Dictionary<string, bool>();
+
+                keyValuePairs.Add("sleeve strategy code", true);
+                keyValuePairs.Add("sleeve strategy name", true);
+
+
+
+                List<string> keys = new List<string>(keyValuePairs.Keys);
+                foreach (string key in keys)
+                {
+                    keyValuePairs[key] = false;
+                }
+                    
+
+
+
+
+
+
+
+                Console.ReadKey();
+                //JArray array = JArray.Parse(jsonStr);
+
+                //foreach (JObject content in array.Children<JObject>())
+                //{
+                //    foreach (JProperty prop in content.Properties())
+                //    {
+                //        Console.WriteLine(prop.Name);
+                //    }
+                //}
+
+
+
+
+
+
                 JObject jObject = JObject.Parse(jsonStr);
+
+                
+
+
+
 
                 JToken CatInformation = jObject["CatInformation"];
 
@@ -43,6 +87,41 @@ namespace DennisDemos.Demoes
                 }
             }
         }
+
+        private void GetKeys(List<string> keys, JToken token)
+        {
+            if (token.Type == JTokenType.Object)
+            {
+                foreach (var item in token)
+                {
+                    GetKeys(keys, item);
+                }
+            }
+            if (token.Type == JTokenType.Property)
+            {
+                
+            }
+            //foreach (var item in jObject.Properties())
+            //{
+            //    keys.Add(item.Name);
+            //    var value = jObject[item.Name];
+            //    if (value.HasValues)
+            //    {
+            //        if (value.Type != JTokenType.Array)
+            //        {
+            //            GetKeys(keys, jObject[item.Name].ToObject<JObject>());
+            //        }
+            //        else
+            //        {
+            //            foreach (var itemInArray in value)
+            //            {
+            //                itemInArray
+            //            }
+            //        }
+            //    }
+            //}
+        }
+
 
     }
     public class Student
