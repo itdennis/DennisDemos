@@ -31,36 +31,9 @@ namespace DennisDemos.Demoes
                 {
                     keyValuePairs[key] = false;
                 }
-                    
-
-
-
-
-
-
 
                 Console.ReadKey();
-                //JArray array = JArray.Parse(jsonStr);
-
-                //foreach (JObject content in array.Children<JObject>())
-                //{
-                //    foreach (JProperty prop in content.Properties())
-                //    {
-                //        Console.WriteLine(prop.Name);
-                //    }
-                //}
-
-
-
-
-
-
                 JObject jObject = JObject.Parse(jsonStr);
-
-                
-
-
-
 
                 JToken CatInformation = jObject["CatInformation"];
 
