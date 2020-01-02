@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MoreEffectiveInCSharpDemos
+namespace EntityFrameworkCore_Demo
 {
     class Program
     {
