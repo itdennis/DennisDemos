@@ -175,6 +175,5 @@
 /ASP.Net Core Demos/MiddleWareDemos/Demo_IpRateLimitMiddleware/bin/Debug
 /ASP.Net Core Demos/MiddleWareDemos/Demo_IpRateLimitMiddleware/obj
 /ASP.Net Core Demos/ASPNETCORE2.0WEBDEMO/ASPNetCore2.0_WebDemo/obj
-/ASP.Net Core Demos/ASPNETCORE2.0WEBDEMO/ASPNetCore2.0_WebDemo/bin/Debug/netcoreapp2.2
-/EntityFrameworkCore_Demo/bin/Debug/netcoreapp3.1
-/EntityFrameworkCore_Demo/obj
+/dennis-webapi-demo/bin/Debug/netcoreapp3.1
+/dennis-webapi-demo/obj

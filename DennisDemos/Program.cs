@@ -16,8 +16,15 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            ConcurrentDictionaryDemo.Run();
+            Class2 class2 = new Class2();
+            if (class2.TestB)
+            {
 
+            }
+
+            //ConcurrentDictionaryDemo.Run();
+            JSONDemo demo = new JSONDemo();
+            demo.Run();
         }
     }
 }
