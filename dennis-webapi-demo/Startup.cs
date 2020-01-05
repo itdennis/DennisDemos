@@ -1,17 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using dennis_webapi_demo.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore;
-using dennis_webapi_demo.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using dennis_webapi_demo.Jwt;
 
 namespace dennis_webapi_demo
 {
@@ -27,6 +24,24 @@ namespace dennis_webapi_demo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<JwtSetting>(Configuration);
+            var jwtSetting = new JwtSetting();
+            Configuration.Bind("jwtSetting", jwtSetting);
+
+            services.AddAuthentication(opt =>
+            {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(o =>
+            {
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = jwtSetting.ValidIssuer,
+                    ValidAudience = jwtSetting.ValidAudience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSetting.IssuerSigningKey))
+                };
+            });
+
             services.AddDbContext<TodoContext>(opt =>
                opt.UseInMemoryDatabase("TodoList"));
             services.AddControllers();
@@ -37,8 +52,10 @@ namespace dennis_webapi_demo
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                
             }
+
+            app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();
 
