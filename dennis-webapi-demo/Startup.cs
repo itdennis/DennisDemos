@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using dennis_webapi_demo.Jwt;
+using System;
 
 namespace dennis_webapi_demo
 {
@@ -28,17 +29,32 @@ namespace dennis_webapi_demo
             var jwtSetting = new JwtSetting();
             Configuration.Bind("jwtSetting", jwtSetting);
 
-            services.AddAuthentication(opt =>
+            services.AddAuthentication(options =>
             {
-                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(o =>
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
             {
-                o.TokenValidationParameters = new TokenValidationParameters
+                //options.Authority = $"https://{Configuration["Auth0:Domain"]}/";
+                //options.Audience = Configuration["Auth0:Audience"];
+                options.TokenValidationParameters = new TokenValidationParameters
                 {
+                    // The signing key must match!
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSetting.IssuerSigningKey)),
+
+                    // Validate the JWT Issuer (iss) claim
+                    ValidateIssuer = true,
                     ValidIssuer = jwtSetting.ValidIssuer,
+
+                    // Validate the JWT Audience (aud) claim
+                    ValidateAudience = true,
                     ValidAudience = jwtSetting.ValidAudience,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSetting.IssuerSigningKey))
+
+                    // Validate the token expiry
+                    ValidateLifetime = true,
+
+                    ClockSkew = TimeSpan.Zero
                 };
             });
 
@@ -50,17 +66,13 @@ namespace dennis_webapi_demo
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                
-            }
-
             app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
