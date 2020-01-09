@@ -75,6 +75,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET Core Web Demo", "AS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dennis-webapi-demo", "dennis-webapi-demo\dennis-webapi-demo.csproj", "{7663DE59-2EAA-457A-99BC-29F3E14D565D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dennis-angular-test", "dennis-angular-test\dennis-angular-test.csproj", "{9D22218B-8046-48CB-A2AA-0F9F04B57F8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{7663DE59-2EAA-457A-99BC-29F3E14D565D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7663DE59-2EAA-457A-99BC-29F3E14D565D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7663DE59-2EAA-457A-99BC-29F3E14D565D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D22218B-8046-48CB-A2AA-0F9F04B57F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D22218B-8046-48CB-A2AA-0F9F04B57F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D22218B-8046-48CB-A2AA-0F9F04B57F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D22218B-8046-48CB-A2AA-0F9F04B57F8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +197,7 @@ Global
 		{DBFA1007-6CC7-489B-848F-A5036909129B} = {08589217-0ACF-4188-92F8-2C963497D555}
 		{E8BA9728-9750-4B97-9D24-16195053B509} = {DBFA1007-6CC7-489B-848F-A5036909129B}
 		{7663DE59-2EAA-457A-99BC-29F3E14D565D} = {62ACF058-FDED-4F5F-AF27-DC9E8C5BCFFB}
+		{9D22218B-8046-48CB-A2AA-0F9F04B57F8D} = {62ACF058-FDED-4F5F-AF27-DC9E8C5BCFFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9A460D5-C620-42EA-A242-FF14BE275109}
