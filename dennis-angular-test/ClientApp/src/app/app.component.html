@@ -1,6 +1,15 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-</body>
+<div class="container">
+    <div class="row" style="margin-top: 30px">
+        <div class="col-md-3 col-xs-6" *ngFor="let student of students">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ student.name }}</h5>
+                    <h6 class="card-subtitle">{{ student.enrollmentnumber }}</h6>
+                    <p class="card-text">{{ student.college }}</p>
+                    <p class="card-text">{{ student.university }}</p>
+                    <a class="btn btn-primary" href="#" >Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@ using DennisDemos.Demoes.CSharp_basis;
 using DennisDemos.Demoes.Delegate_Demos;
 using DennisDemos.Interview;
 using DennisDemos.JustForTest;
+using DennisDemos.Utils;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -16,15 +17,17 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            Class2 class2 = new Class2();
-            if (class2.TestB)
-            {
+            //var task = Github.GetRepo("itdennis", "dennis-pics", "5a084fcbe76dfb51752a9222bac085d32cdb4c00");
+            //task.Wait();
+            //var dir = task.Result;
 
-            }
+            //var task = BearerToken.GetBearerToken("https://microsoft.onmicrosoft.com/flighter");
+            //task.Wait();
+            //var res = task.Result;
 
-            //ConcurrentDictionaryDemo.Run();
-            JSONDemo demo = new JSONDemo();
-            demo.Run();
+            var task = AzureDevOpsServices.GetProjects();
+
+            task.Wait();
         }
     }
 }
