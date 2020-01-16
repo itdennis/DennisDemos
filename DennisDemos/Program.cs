@@ -25,6 +25,13 @@ namespace DennisDemos
             //task.Wait();
             //var res = task.Result;
 
+            string referrer = "WoodblocksV4.US.Slot18.newbee.dat";
+
+
+            referrer = referrer.Substring(0, referrer.Substring(0, referrer.LastIndexOf(".")).LastIndexOf("."));
+
+
+
             var task = AzureDevOpsServices.GetProjects();
 
             task.Wait();
