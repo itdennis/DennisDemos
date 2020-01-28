@@ -152,6 +152,17 @@
     <Compile Include="JustForTest\Class2.cs" />
     <Compile Include="JustForTest\LeetCodeInversedNum.cs" />
     <Compile Include="JustForTest\SplitString2Char.cs" />
+    <Compile Include="LeetCodes\LeetCode107.cs" />
+    <Compile Include="LeetCodes\LeetCode111.cs" />
+    <Compile Include="LeetCodes\LeetCode112.cs" />
+    <Compile Include="LeetCodes\LeetCode118.cs" />
+    <Compile Include="LeetCodes\LeetCode119.cs" />
+    <Compile Include="LeetCodes\LeetCode125.cs" />
+    <Compile Include="LeetCodes\LeetCode136.cs" />
+    <Compile Include="LeetCodes\LeetCode167.cs" />
+    <Compile Include="LeetCodes\LeetCode169.cs" />
+    <Compile Include="LeetCodes\maximum-depth-of-binary-tree.cs" />
+    <Compile Include="LeetCodes\Utils\TreeNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Demoes\OldDemos\SequenceEqualDemo.cs" />

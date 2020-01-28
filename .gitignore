@@ -179,3 +179,10 @@
 /dennis-webapi-demo/obj
 /EntityFrameworkCore_Demo/obj
 /ASP.Net Core Demos/ASPNETCORE2.0WEBDEMO/ASPNetCore2.0_WebDemo/bin/Debug/netcoreapp2.2/Properties
+/anc2.2/obj
+/anc3.1/obj
+/anc3.1_middleware_test/bin/Debug/netcoreapp3.1
+/anc3.1_middleware_test/obj
+/anc3.1_mvc/obj
+/ancBefore2/obj
+/ancbefore2.2_mvc/obj
