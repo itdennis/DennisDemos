@@ -161,7 +161,15 @@
     <Compile Include="LeetCodes\LeetCode136.cs" />
     <Compile Include="LeetCodes\LeetCode167.cs" />
     <Compile Include="LeetCodes\LeetCode169.cs" />
+    <Compile Include="LeetCodes\LeetCode189.cs" />
+    <Compile Include="LeetCodes\LeetCode193.cs" />
+    <Compile Include="LeetCodes\LeetCode203.cs" />
+    <Compile Include="LeetCodes\LeetCode204.cs" />
+    <Compile Include="LeetCodes\LeetCode205.cs" />
+    <Compile Include="LeetCodes\LeetCode206.cs" />
+    <Compile Include="LeetCodes\LeetCode217.cs" />
     <Compile Include="LeetCodes\maximum-depth-of-binary-tree.cs" />
+    <Compile Include="LeetCodes\Utils\ListNode.cs" />
     <Compile Include="LeetCodes\Utils\TreeNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

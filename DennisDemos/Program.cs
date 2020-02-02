@@ -18,8 +18,8 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            LeetCode125 leet = new LeetCode125();
-            leet.IsPalindrome("123321");
+            LeetCode204 leet = new LeetCode204();
+            leet.CountPrimes(10);
         }
     }
 }
