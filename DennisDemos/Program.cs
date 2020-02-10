@@ -18,8 +18,8 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            LeetCode204 leet = new LeetCode204();
-            leet.CountPrimes(10);
+            LeetCode414 leet = new LeetCode414();
+            leet.ThirdMax(new int[] { 1,1,2});
         }
     }
 }
