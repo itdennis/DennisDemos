@@ -1,5 +1,4 @@
-import TreeNode
-
+import Utils.PythonTreeNode
 class MidTree:
     nodeList = list()
     def midTree(self, node):
@@ -9,7 +8,7 @@ class MidTree:
         self.nodeList.append(node.val)
         self.midTree(node.right)
 
-node = TreeNode.TreeNode(4)
+node = Utils.PythonTreeNode.PythonTreeNode(4)
 mid = MidTree()
 mid.midTree(node)
 print(MidTree.nodeList)
