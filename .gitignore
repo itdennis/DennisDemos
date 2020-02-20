@@ -188,3 +188,7 @@
 /ancbefore2.2_mvc/obj
 /Ocelot.Core/obj
 /micro_services/OcelotDemo/obj
+/Reviver/bin/Debug/netcoreapp3.1
+/Reviver/obj
+/Sender/bin/Debug/netcoreapp3.1
+/Sender/obj
