@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Ocelot.Core
+namespace TestServiceB
 {
     public class Program
     {
@@ -18,16 +18,10 @@ namespace Ocelot.Core
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hostingContext, config) => {
-                    config.SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
-                        .AddJsonFile("appsettings.json", true, true)
-                        .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true)
-                        .AddJsonFile("ocelot.json")
-                        .AddEnvironmentVariables();
-                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://localhost:5012");
                 });
     }
 }

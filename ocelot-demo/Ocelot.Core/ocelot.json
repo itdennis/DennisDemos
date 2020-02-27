@@ -1,0 +1,27 @@
+﻿{
+  "GlobalConfiguration": { //全局配置
+    "BaseUrl": "http://localhost:5000" //告诉别人网关对外暴露的域名
+  },
+  //路由配置
+  "ReRoutes": [
+    {
+      "UpstreamPathTemplate": "/apiservice/{controller}/{action}", //请求路径模板
+      "UpstreamHttpMethod": [ "Get", "POST" ], //请求方法数组
+      "DownstreamPathTemplate": "/apiservice/{controller}/{action}", //下游请求地址模板
+      "DownstreamScheme": "http", //请求协议，目前应该是支持http和https
+      "DownstreamHostAndPorts": [ //下游地址和端口
+        {
+          "host": "localhost",
+          "port": 5011
+        },
+        {
+          "host": "localhost",
+          "port": 5012
+        }
+      ],
+      "LoadBalancerOptions": { //负载均衡 RoundRobin(轮询)/LeastConnection(最少连接数)/CookieStickySessions(相同的Sessions或Cookie发往同一个地址)/NoLoadBalancer(不使用负载)
+        "Type": "RoundRobin"
+      }
+    }
+  ]
+}
