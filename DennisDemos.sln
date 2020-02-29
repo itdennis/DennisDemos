@@ -93,7 +93,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Core", "ocelot-demo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServiceA", "ocelot-demo\api\api1\TestServiceA\TestServiceA.csproj", "{D57EBA53-E33B-469F-942F-4DC7CB0BB23B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServiceB", "ocelot-demo\api\api1\TestServiceB\TestServiceB.csproj", "{00460455-026E-462A-957E-E4A00EEC8992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServiceB", "ocelot-demo\api\api1\TestServiceB\TestServiceB.csproj", "{00460455-026E-462A-957E-E4A00EEC8992}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspectcore.demos", "aspectcore.demos", "{8C3B66AA-AC54-4042-9F0E-82C95BB4E834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspectcore.demo", "aspectcore-demo\aspectcore.demo\aspectcore.demo.csproj", "{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consul.service", "ocelot-demo\consul\consul.service\consul.service.csproj", "{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +207,14 @@ Global
 		{00460455-026E-462A-957E-E4A00EEC8992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00460455-026E-462A-957E-E4A00EEC8992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00460455-026E-462A-957E-E4A00EEC8992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -248,6 +262,9 @@ Global
 		{72DEFF05-DC74-4A81-AD5B-86C4A19F6F66} = {BE0E3E8D-BF47-4496-896D-9E64C1DF0BF7}
 		{D57EBA53-E33B-469F-942F-4DC7CB0BB23B} = {BE0E3E8D-BF47-4496-896D-9E64C1DF0BF7}
 		{00460455-026E-462A-957E-E4A00EEC8992} = {BE0E3E8D-BF47-4496-896D-9E64C1DF0BF7}
+		{8C3B66AA-AC54-4042-9F0E-82C95BB4E834} = {23BAAE03-CF83-40E9-B54D-CE5752864925}
+		{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A} = {8C3B66AA-AC54-4042-9F0E-82C95BB4E834}
+		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86} = {BE0E3E8D-BF47-4496-896D-9E64C1DF0BF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9A460D5-C620-42EA-A242-FF14BE275109}

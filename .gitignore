@@ -214,3 +214,11 @@
 /tests/ancBefore2/obj
 /tests/ancbefore2.2_mvc/bin/Debug/netcoreapp2.1
 /tests/ancbefore2.2_mvc/obj
+/aspectcore-demo/aspectcore.demo/bin/Debug/netcoreapp3.1
+/aspectcore-demo/aspectcore.demo/obj
+/ocelot-demo/api/api1/TestServiceA - Copy/bin/Debug/netcoreapp3.0
+/ocelot-demo/api/api1/TestServiceA - Copy/obj
+/ocelot-demo/api/api1/TestServiceA - Copy (2)/bin/Debug/netcoreapp3.0
+/ocelot-demo/api/api1/TestServiceA - Copy (2)/obj
+/ocelot-demo/consul/consul.service/bin/Debug/netcoreapp3.0
+/ocelot-demo/consul/consul.service/obj
