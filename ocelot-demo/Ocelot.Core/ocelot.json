@@ -9,21 +9,34 @@
   },
   "ReRoutes": [
     {
-      "UpstreamPathTemplate": "/api/{controller}/{action}",
+      "UpstreamPathTemplate": "/{url}",
       "UpstreamHttpMethod": [ "Get", "POST" ],
-      "DownstreamPathTemplate": "/apiservice/{controller}/{action}",
+      "DownstreamPathTemplate": "/{url}",
       "DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 5011
-      //  }
-      //],
       "LoadBalancerOptions": { // RoundRobin/LeastConnection/CookieStickySessions(相同的Sessions或Cookie发往同一个地址)/NoLoadBalancer
         "Type": "RoundRobin"
       },
       "UseServiceDiscovery": true,
-      "ServiceName": "dennis.microservice.testapi-a"
+      "ServiceName": "dennis.microservice.testapi-a",
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      },
+      "QosOptions": {
+        "ExceptionAllowedBeforeBreaking": 3, // 允许多少个请求异常
+        "DurationOfBreak": 5, // 熔断的时间, 单位s
+        "TimeoutValue": 10000 // 如果下游请求的处理时间超过多少则将请求设置为超时
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+      //"RateLimitOptions": {
+      //  "ClientWhiteList": [],
+      //  "EnableRateLimiting": true,
+      //  "Period": "5m",
+      //  "PeriodTimespan": 5,
+      //  "Limit": 5
+      //}
     }
   ]
 }

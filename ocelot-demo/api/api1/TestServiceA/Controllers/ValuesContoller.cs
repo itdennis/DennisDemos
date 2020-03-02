@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestServiceA.Controllers
 {
-    [Route("apiservice/[controller]/[action]")]
+    [Route("apiservice/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
@@ -22,11 +22,11 @@ namespace TestServiceA.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1A", "value2A" };
+            return new string[] { $"this is api resourse from service test-a, port is: {Convert.ToInt32(Configuration["Service:Port"])}", HttpContext.Request.Host.Port + "=>" + Configuration["AppName"] + "=>" + DateTime.Now.ToString() };
         }
 
         // GET api/values/5
-        [HttpGet]//("{id}")
+        [HttpGet("{id}")]//("{id}")
         public ActionResult<string> Getid(int id)
         {
             return HttpContext.Request.Host.Port + "=>" + Configuration["AppName"] + "=>" + DateTime.Now.ToString() + "=>" + id;
