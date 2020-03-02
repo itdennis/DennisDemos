@@ -222,3 +222,5 @@
 /ocelot-demo/api/api1/TestServiceA - Copy (2)/obj
 /ocelot-demo/consul/consul.service/bin/Debug/netcoreapp3.0
 /ocelot-demo/consul/consul.service/obj
+/AuthorizationServer/bin/Debug/netcoreapp3.1
+/AuthorizationServer/obj

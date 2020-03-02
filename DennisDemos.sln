@@ -97,9 +97,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServiceB", "ocelot-demo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspectcore.demos", "aspectcore.demos", "{8C3B66AA-AC54-4042-9F0E-82C95BB4E834}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspectcore.demo", "aspectcore-demo\aspectcore.demo\aspectcore.demo.csproj", "{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspectcore.demo", "aspectcore-demo\aspectcore.demo\aspectcore.demo.csproj", "{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consul.service", "ocelot-demo\consul\consul.service\consul.service.csproj", "{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consul.service", "ocelot-demo\consul\consul.service\consul.service.csproj", "{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationServer", "AuthorizationServer\AuthorizationServer.csproj", "{EC426BF8-2720-4EA3-A053-607C943179A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -215,6 +217,10 @@ Global
 		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC426BF8-2720-4EA3-A053-607C943179A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC426BF8-2720-4EA3-A053-607C943179A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC426BF8-2720-4EA3-A053-607C943179A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC426BF8-2720-4EA3-A053-607C943179A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -265,6 +271,7 @@ Global
 		{8C3B66AA-AC54-4042-9F0E-82C95BB4E834} = {23BAAE03-CF83-40E9-B54D-CE5752864925}
 		{01497DAF-2BAB-44B8-BC05-BD01A6B5C06A} = {8C3B66AA-AC54-4042-9F0E-82C95BB4E834}
 		{BAFD65AD-B7B6-4AA3-A839-1604B6E85D86} = {BE0E3E8D-BF47-4496-896D-9E64C1DF0BF7}
+		{EC426BF8-2720-4EA3-A053-607C943179A0} = {62ACF058-FDED-4F5F-AF27-DC9E8C5BCFFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9A460D5-C620-42EA-A242-FF14BE275109}
