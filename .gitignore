@@ -224,3 +224,5 @@
 /ocelot-demo/consul/consul.service/obj
 /AuthorizationServer/bin/Debug/netcoreapp3.1
 /AuthorizationServer/obj
+/MVCApp.authentication.test/bin/Debug/netcoreapp3.1
+/MVCApp.authentication.test/obj

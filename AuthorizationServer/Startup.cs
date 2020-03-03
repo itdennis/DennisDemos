@@ -30,7 +30,8 @@ namespace AuthorizationServer
                 .AddDeveloperSigningCredential()
                 .AddTestUsers(InMemoryConfiguration.GetUsers().ToList())
                 .AddInMemoryClients(InMemoryConfiguration.GetClients().ToList())
-                .AddInMemoryApiResources(InMemoryConfiguration.GetApiResources().ToList());
+                .AddInMemoryApiResources(InMemoryConfiguration.GetApiResources().ToList())
+                .AddInMemoryIdentityResources(InMemoryConfiguration.GetIdentityResources());
 
             services.AddMvc();
         }

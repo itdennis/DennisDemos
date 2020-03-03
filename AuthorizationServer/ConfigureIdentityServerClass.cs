@@ -1,4 +1,5 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityServer4;
+using IdentityServer4.Models;
 using IdentityServer4.Test;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -10,6 +11,15 @@ namespace AuthorizationServer
 {
     public class InMemoryConfiguration
     {
+        public static IEnumerable<IdentityResource> GetIdentityResources()
+        {
+            return new List<IdentityResource>
+            {
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile(),
+            };
+        }
+
         public static IConfiguration Configuration { get; set; }
         /// <summary>
         /// Define which APIs will use this IdentityServer
@@ -53,6 +63,20 @@ namespace AuthorizationServer
                     ClientSecrets = new [] { new Secret("agentsecret".Sha256()) },
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
                     AllowedScopes = new [] { "agentservice", "clientservice", "productservice" }
+                },
+                new Client
+                {
+                    ClientId = "mvc_implicit",
+                    ClientName = "MVC Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RedirectUris = { "http://localhost:5002/signin-oidc" },
+                    PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "agentservice"
+                    }
                 }
             };
         }
