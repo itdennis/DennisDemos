@@ -26,6 +26,23 @@ namespace TestServiceA
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //services.AddAuthentication("Bearer")
+            //.AddIdentityServerAuthentication(options =>
+            //{
+            //    options.Authority = "http://localhost:5000";
+            //    options.RequireHttpsMetadata = false;
+            //    options.ApiName = "dennis.microservice.testapi-a";
+
+            //});
+
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "http://localhost:5000";
+                    options.RequireHttpsMetadata = false;
+                    options.ApiName = "dennis.microservice.testapi-a";
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +54,7 @@ namespace TestServiceA
             }
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             var localIpAddress = Dns.GetHostAddresses(Environment.MachineName).Where(ip => ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork).FirstOrDefault().ToString();
@@ -50,7 +67,7 @@ namespace TestServiceA
                 ConsulIP = Configuration["Consul:IP"],
                 ConsulPort = Convert.ToInt32(Configuration["Consul:Port"])
             };
-            app.RegisterConsul(lifetime, serviceEntity);
+            //app.RegisterConsul(lifetime, serviceEntity);
 
             app.UseEndpoints(endpoints =>
             {

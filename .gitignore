@@ -226,3 +226,17 @@
 /AuthorizationServer/obj
 /MVCApp.authentication.test/bin/Debug/netcoreapp3.1
 /MVCApp.authentication.test/obj
+/one-picture-microservice/identityserver4test/quickstart/.vs/Quickstart/v16
+/one-picture-microservice/identityserver4test/quickstart/.vs/Quickstart/DesignTimeBuild
+/one-picture-microservice/identityserver4test/quickstart/src/Api/bin/Debug/netcoreapp3.1
+/one-picture-microservice/identityserver4test/quickstart/src/Api/obj
+/one-picture-microservice/identityserver4test/quickstart/src/Client/bin/Debug/netcoreapp3.1
+/one-picture-microservice/identityserver4test/quickstart/src/Client/obj
+/one-picture-microservice/identityserver4test/quickstart/src/IdentityServer/bin/Debug/netcoreapp3.1
+/one-picture-microservice/identityserver4test/quickstart/src/IdentityServer/obj
+/one-picture-microservice/identityserver4test/quickstart/src/identityserveref/bin/Debug/netcoreapp3.1
+/one-picture-microservice/identityserver4test/quickstart/src/identityserveref/obj
+/one-picture-microservice/identityserver4test/quickstart/src/JavaScriptClient/obj
+/one-picture-microservice/identityserver4test/quickstart/src/mvc-client/bin/Debug/netcoreapp3.1
+/one-picture-microservice/identityserver4test/quickstart/src/mvc-client/obj
+/one-picture-microservice/identityserver4test/.vscode

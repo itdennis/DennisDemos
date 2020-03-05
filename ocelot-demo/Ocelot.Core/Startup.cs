@@ -22,24 +22,46 @@ namespace Ocelot.Core
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOcelot().AddConsul().AddPolly();
-            var authenticationProviderKey = "TestKey";
+            
+            var authenticationProviderKey = "OcelotKey";
 
-            Action<IdentityServerAuthenticationOptions> isaOpt = option =>
-            {
-                option.Authority = _config["IdentityService:Uri"];
-                option.ApiName = "clientservice";
-                option.RequireHttpsMetadata = Convert.ToBoolean(_config["IdentityService:UseHttps"]);
-                option.SupportedTokens = SupportedTokens.Both;
-                option.ApiSecret = _config["IdentityService:ApiSecrets:clientservice"];
-            };
-            services.AddAuthentication().AddIdentityServerAuthentication(authenticationProviderKey, isaOpt);
+            //services.AddAuthentication("Bearer")
+            //    .AddJwtBearer(authenticationProviderKey, options =>
+            //    {
+            //        options.Authority = "http://localhost:5000";
+            //        options.RequireHttpsMetadata = false;
+            //        options.Audience = "dennis.microservice.testapi-a";
+            //    });
+
+
+            //Action<IdentityServerAuthenticationOptions> options = o =>
+            //{
+            //    o.Authority = "http://localhost:5000";
+            //    o.ApiName = "dennis.microservice.testapi-a";
+            //    o.SupportedTokens = SupportedTokens.Both;
+            //    o.RequireHttpsMetadata = false;
+            //};
+
+            //services.AddAuthentication()
+            //    .AddIdentityServerAuthentication(authenticationProviderKey, options);
+
+            services.AddOcelot().AddConsul().AddPolly();
+
+            //Action<IdentityServerAuthenticationOptions> isaOpt = option =>
+            //{
+            //    option.Authority = "http://localhost:5000";
+            //    option.ApiName = "dennis.microservice.testapi-a";
+            //    option.RequireHttpsMetadata = false;
+            //    option.SupportedTokens = SupportedTokens.Both;
+            //    option.ApiSecret = "ocelot-clientsecrets";
+            //};
+            //services.AddAuthentication().AddIdentityServerAuthentication(authenticationProviderKey, isaOpt);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseDeveloperExceptionPage();
-
+            //app.UseAuthentication();
             app.UseOcelot().Wait();
 
         }
