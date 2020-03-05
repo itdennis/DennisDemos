@@ -27,15 +27,6 @@ namespace TestServiceA
         {
             services.AddControllers();
 
-            //services.AddAuthentication("Bearer")
-            //.AddIdentityServerAuthentication(options =>
-            //{
-            //    options.Authority = "http://localhost:5000";
-            //    options.RequireHttpsMetadata = false;
-            //    options.ApiName = "dennis.microservice.testapi-a";
-
-            //});
-
             services.AddAuthentication("Bearer")
                 .AddIdentityServerAuthentication(options =>
                 {
@@ -67,7 +58,7 @@ namespace TestServiceA
                 ConsulIP = Configuration["Consul:IP"],
                 ConsulPort = Convert.ToInt32(Configuration["Consul:Port"])
             };
-            //app.RegisterConsul(lifetime, serviceEntity);
+            app.RegisterConsul(lifetime, serviceEntity);
 
             app.UseEndpoints(endpoints =>
             {

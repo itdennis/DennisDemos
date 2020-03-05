@@ -8,50 +8,45 @@
     }
   },
   "ReRoutes": [
-    //{
-    //  "UpstreamPathTemplate": "/{source-url}",
-    //  "UpstreamHttpMethod": [ "Get", "POST" ],
-    //  "DownstreamPathTemplate": "/{dest-url}",
-    //  "DownstreamScheme": "http",
-    //  "LoadBalancerOptions": { // RoundRobin/LeastConnection/CookieStickySessions(相同的Sessions或Cookie发往同一个地址)/NoLoadBalancer
-    //    "Type": "RoundRobin"
-    //  },
-    //  "UseServiceDiscovery": true,
-    //  "ServiceName": "dennis.microservice.testapi-a",
-    //  "FileCacheOptions": {
-    //    "TtlSeconds": 10
-    //  },
-    //  "QosOptions": {
-    //    "ExceptionAllowedBeforeBreaking": 3, // 允许多少个请求异常
-    //    "DurationOfBreak": 5, // 熔断的时间, 单位s
-    //    "TimeoutValue": 10000 // 如果下游请求的处理时间超过多少则将请求设置为超时
-    //  },
-    //  "AuthenticationOptions": {
-    //    "AuthenticationProviderKey": "OcelotKey",
-    //    "AllowedScopes": []
-    //  }
-    //},
     {
-      "DownstreamPathTemplate": "/{url}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 8080
-        }
-      ],
-      "LoadBalancerOptions": { 
-        "Type": "RoundRobin"
-      },
       "UpstreamPathTemplate": "/{url}",
       "UpstreamHttpMethod": [ "Get", "POST" ],
-      "RateLimitOptions": {
-        "ClientWhitelist": [],
-        "EnableRateLimiting": true,
-        "Period": "1s",
-        "PeriodTimespan": 1,
-        "Limit": 1
-      }
-    }
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UseServiceDiscovery": true,
+      "ServiceName": "dennis.microservice.testapi-a",
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      },
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "OcelotKey",
+      //  "AllowedScopes": []
+      //}
+    },
+    //{
+    //  "DownstreamPathTemplate": "/{url}",
+    //  "DownstreamScheme": "http",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 8080
+    //    }
+    //  ],
+    //  "LoadBalancerOptions": { 
+    //    "Type": "RoundRobin"
+    //  },
+    //  "UpstreamPathTemplate": "/{url}",
+    //  "UpstreamHttpMethod": [ "Get", "POST" ],
+    //  "RateLimitOptions": {
+    //    "ClientWhitelist": [],
+    //    "EnableRateLimiting": true,
+    //    "Period": "1s",
+    //    "PeriodTimespan": 1,
+    //    "Limit": 1
+    //  }
+    //}
   ]
 }
