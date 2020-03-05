@@ -45,6 +45,7 @@ namespace mvc_client
                     options.SaveTokens = true; //SaveTokens is used to persist the tokens from IdentityServer in the cookie (as they will be needed later).Since SaveTokens is enabled, ASP.NET Core will automatically store the resulting access and refresh token in the authentication session. 
 
                     options.Scope.Add("api1");
+                    options.Scope.Add("dennis.microservice.testapi-a");
                     options.Scope.Add("offline_access");
                 });
         }
