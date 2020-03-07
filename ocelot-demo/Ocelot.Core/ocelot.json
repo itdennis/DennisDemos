@@ -21,10 +21,10 @@
       "FileCacheOptions": {
         "TtlSeconds": 10
       },
-      //"AuthenticationOptions": {
-      //  "AuthenticationProviderKey": "OcelotKey",
-      //  "AllowedScopes": []
-      //}
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "OcelotKey",
+        "AllowedScopes": []
+      }
     },
     //{
     //  "DownstreamPathTemplate": "/{url}",

@@ -34,16 +34,17 @@ namespace Ocelot.Core
             //    });
 
 
-            //Action<IdentityServerAuthenticationOptions> options = o =>
-            //{
-            //    o.Authority = "http://localhost:5000";
-            //    o.ApiName = "dennis.microservice.testapi-a";
-            //    o.SupportedTokens = SupportedTokens.Both;
-            //    o.RequireHttpsMetadata = false;
-            //};
+            Action<IdentityServerAuthenticationOptions> options = o =>
+            {
+                o.Authority = "http://localhost:5000";
+                o.ApiName = "dennis.microservice.testapi-a";
+                o.SupportedTokens = SupportedTokens.Both;
+                o.RequireHttpsMetadata = false;
+                o.ApiSecret = "";
+            };
 
-            //services.AddAuthentication()
-            //    .AddIdentityServerAuthentication(authenticationProviderKey, options);
+            services.AddAuthentication()
+                .AddIdentityServerAuthentication(authenticationProviderKey, options);
 
             services.AddOcelot().AddConsul().AddPolly();
 
