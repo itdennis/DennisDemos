@@ -23,40 +23,31 @@ namespace Ocelot.Core
         public void ConfigureServices(IServiceCollection services)
         {
             
-            var authenticationProviderKey = "OcelotKey";
+            //var authenticationProviderKey = "dennis.microservice.testapi-a";
+            //Action<IdentityServerAuthenticationOptions> options = o =>
+            //{
+            //    o.Authority = "http://localhost:5000";
+            //    o.ApiName = "dennis.microservice.testapi-a";
+            //    o.SupportedTokens = SupportedTokens.Both;
+            //    o.RequireHttpsMetadata = false;
+            //    o.ApiSecret = "";
+            //};
 
-            //services.AddAuthentication("Bearer")
-            //    .AddJwtBearer(authenticationProviderKey, options =>
-            //    {
-            //        options.Authority = "http://localhost:5000";
-            //        options.RequireHttpsMetadata = false;
-            //        options.Audience = "dennis.microservice.testapi-a";
-            //    });
+            //var authenticationProviderKey2 = "Dennis.Blog.WebApiService";
+            //Action<IdentityServerAuthenticationOptions> options2 = o =>
+            //{
+            //    o.Authority = "http://localhost:5000";
+            //    o.ApiName = "Dennis.Blog.WebApiService";
+            //    o.SupportedTokens = SupportedTokens.Both;
+            //    o.RequireHttpsMetadata = false;
+            //    o.ApiSecret = "";
+            //};
 
-
-            Action<IdentityServerAuthenticationOptions> options = o =>
-            {
-                o.Authority = "http://localhost:5000";
-                o.ApiName = "dennis.microservice.testapi-a";
-                o.SupportedTokens = SupportedTokens.Both;
-                o.RequireHttpsMetadata = false;
-                o.ApiSecret = "";
-            };
-
-            services.AddAuthentication()
-                .AddIdentityServerAuthentication(authenticationProviderKey, options);
+            //services.AddAuthentication()
+            //    .AddIdentityServerAuthentication(authenticationProviderKey, options)
+            //    .AddIdentityServerAuthentication(authenticationProviderKey2, options2);
 
             services.AddOcelot().AddConsul().AddPolly();
-
-            //Action<IdentityServerAuthenticationOptions> isaOpt = option =>
-            //{
-            //    option.Authority = "http://localhost:5000";
-            //    option.ApiName = "dennis.microservice.testapi-a";
-            //    option.RequireHttpsMetadata = false;
-            //    option.SupportedTokens = SupportedTokens.Both;
-            //    option.ApiSecret = "ocelot-clientsecrets";
-            //};
-            //services.AddAuthentication().AddIdentityServerAuthentication(authenticationProviderKey, isaOpt);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

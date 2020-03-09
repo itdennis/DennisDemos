@@ -9,9 +9,9 @@
   },
   "ReRoutes": [
     {
-      "UpstreamPathTemplate": "/{url}",
+      "UpstreamPathTemplate": "/apiservice/{url1}",
       "UpstreamHttpMethod": [ "Get", "POST" ],
-      "DownstreamPathTemplate": "/{url}",
+      "DownstreamPathTemplate": "/apiservice/{url1}",
       "DownstreamScheme": "http",
       "LoadBalancerOptions": {
         "Type": "RoundRobin"
@@ -20,33 +20,29 @@
       "ServiceName": "dennis.microservice.testapi-a",
       "FileCacheOptions": {
         "TtlSeconds": 10
-      },
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "OcelotKey",
-        "AllowedScopes": []
       }
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "dennis.microservice.testapi-a",
+      //  "AllowedScopes": []
+      //}
     },
-    //{
-    //  "DownstreamPathTemplate": "/{url}",
-    //  "DownstreamScheme": "http",
-    //  "DownstreamHostAndPorts": [
-    //    {
-    //      "Host": "localhost",
-    //      "Port": 8080
-    //    }
-    //  ],
-    //  "LoadBalancerOptions": { 
-    //    "Type": "RoundRobin"
-    //  },
-    //  "UpstreamPathTemplate": "/{url}",
-    //  "UpstreamHttpMethod": [ "Get", "POST" ],
-    //  "RateLimitOptions": {
-    //    "ClientWhitelist": [],
-    //    "EnableRateLimiting": true,
-    //    "Period": "1s",
-    //    "PeriodTimespan": 1,
-    //    "Limit": 1
-    //  }
-    //}
+    {
+      "UpstreamPathTemplate": "/api/{url2}",
+      "UpstreamHttpMethod": [ "Get", "POST" ],
+      "DownstreamPathTemplate": "/api/{url2}",
+      "DownstreamScheme": "http",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UseServiceDiscovery": true,
+      "ServiceName": "Dennis.Blog.WebApiService",
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Dennis.Blog.WebApiService",
+      //  "AllowedScopes": []
+      //}
+    }
   ]
 }
