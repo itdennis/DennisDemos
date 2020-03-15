@@ -242,3 +242,5 @@
 /one-picture-microservice/identityserver4test/.vscode
 /tests/anc.middleware.test/bin/Debug/netcoreapp3.1
 /tests/anc.middleware.test/obj
+/Accounts.Service/bin/Debug/netcoreapp3.1
+/Accounts.Service/obj

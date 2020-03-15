@@ -150,6 +150,7 @@
     <Compile Include="Interview\IEqualityComparer_demo.cs" />
     <Compile Include="JustForTest\Class1.cs" />
     <Compile Include="JustForTest\Class2.cs" />
+    <Compile Include="JustForTest\Class3.cs" />
     <Compile Include="JustForTest\LeetCodeInversedNum.cs" />
     <Compile Include="JustForTest\SplitString2Char.cs" />
     <Compile Include="LeetCodes\LeetCode107.cs" />

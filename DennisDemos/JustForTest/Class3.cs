@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace DennisDemos.JustForTest
 {
-    public class Class1
+    public class Class3 : Class2
     {
-
-        protected int MyProperty { get; set; }
-
-        protected int GetResult() 
+        public void RunV3()
         {
-            return 1;
+            var a = base.GetResult();
         }
     }
 }
