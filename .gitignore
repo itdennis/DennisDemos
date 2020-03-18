@@ -244,3 +244,11 @@
 /tests/anc.middleware.test/obj
 /Accounts.Service/bin/Debug/netcoreapp3.1
 /Accounts.Service/obj
+/redis.demo/redis.console/bin/Debug/netcoreapp3.1
+/redis.demo/redis.console/obj
+/redis.demo/redis4test/bin/Debug/netcoreapp3.1
+/redis.demo/redis4test/obj
+/tools/MergeTextTool/bin/Debug/netcoreapp3.1
+/tools/MergeTextTool/obj
+/tools/MergeTextTool.Tests/bin/Debug/netcoreapp3.1
+/tools/MergeTextTool.Tests/obj
