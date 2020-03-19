@@ -192,7 +192,9 @@
     <Compile Include="LeetCodes\LeetCode441.cs" />
     <Compile Include="LeetCodes\LeetCode448.cs" />
     <Compile Include="LeetCodes\maximum-depth-of-binary-tree.cs" />
+    <Compile Include="LeetCodes\SortLink.cs" />
     <Compile Include="LeetCodes\Utils\ListNode.cs" />
+    <Compile Include="LeetCodes\Utils\MyLinkedList.cs" />
     <Compile Include="LeetCodes\Utils\TreeNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

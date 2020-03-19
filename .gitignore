@@ -252,3 +252,5 @@
 /tools/MergeTextTool/obj
 /tools/MergeTextTool.Tests/bin/Debug/netcoreapp3.1
 /tools/MergeTextTool.Tests/obj
+/algorithm/algorithm.demos/obj
+/algorithm/algorithm.demos/bin/Debug/netcoreapp3.1
