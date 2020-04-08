@@ -18,8 +18,8 @@ namespace DennisDemos
     {
         static void Main(string[] args)
         {
-            LeetCode448 leet = new LeetCode448();
-            leet.FindDisappearedNumbers(new int[] { 4, 3, 2, 7, 8, 2, 3, 1 });
+            StringToArray_Solution leet = new StringToArray_Solution();
+            leet.StringToArray(" i am  a student ");
         }
     }
 }
