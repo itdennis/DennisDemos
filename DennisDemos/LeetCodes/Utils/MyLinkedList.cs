@@ -8,17 +8,34 @@ namespace DennisDemos.LeetCodes.Utils
 {
     public class MyLinkedList
     {
-
+        public ListNode ListNode { get; set; }
         /** Initialize your data structure here. */
         public MyLinkedList()
         {
-
+            ListNode = new ListNode(0);
         }
 
         /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
-        public void Get(int index)
+        public int Get(int index)
         {
+            if (index < 0)
+            {
+                return -1;
+            }
+            while (index != 0 && ListNode != null)
+            {
+                index--;
+                ListNode = ListNode.next;
+            }
 
+            if (index == 0 && ListNode != null)
+            {
+                return ListNode.val;
+            }
+            else
+            {
+                return -1;
+            }
         }
 
         /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
